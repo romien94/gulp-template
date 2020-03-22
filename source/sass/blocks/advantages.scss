@@ -1,0 +1,31 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 11.8vh;;
+}
+
+.advantage {
+  width: 49%;
+  padding: 40px 3rem 70px;
+  border: 1px solid #EBEBEB;
+  border-left: 3px solid #00B2FF;
+  margin-bottom: 2.2vh;
+  cursor: pointer;
+}
+
+.advantage:hover {
+  background-color: #00B2FF;
+  color: white;
+}
+
+.advantage__title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+}
+
+.advantage__desc {
+  font-family: 'PT mono', monospace;
+  font-size: 16px;
+}
+

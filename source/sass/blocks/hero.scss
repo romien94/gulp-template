@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  min-height: 950px;
+  background-image: url('./../../img/background/hero.png');
+  background-color: rgba($color: #1B2D37, $alpha: 1);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.hero__container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding-left: 6%;
+  align-items: flex-start;
+}
+
+.hero__content:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 66px;
+  height: .2vh;
+  background-color: white;
+  transform: translateX(-120%);
+  top: 1.9vh;
+}
+
+.hero:before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url('./../../img/background/plates.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 50%;
+  height: 100%;
+  z-index: 5;
+  left: 50%;
+  transform: translateY(10%);
+}

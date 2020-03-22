@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  position: absolute;
+  color: white;
+}
+
+.header__container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contacts {
+  display: flex;
+  flex: 1;
+  padding: 0 38px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contacts__link {
+  font-family: 'PT mono', monospace;
+  text-decoration: none;
+}
+
+.header__right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
