@@ -5,65 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Стартовый шаблон</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <div class="wrapper">
-      <section class="section hero">
+      <header class="header">
         <div class="container">
-          <header class="header">
-            <div class="header__left">
-              <a href="" class="logo">
-                <img src="" alt="" class="logo__image" />
-                <div class="logo__title">
-                  <p class="logo__title-text">Smart Device</p>
-                  <p class="logo__title-text">умные технологии</p>
-                </div>
-              </a>
-              <a href="" class="burger-menu"></a>
-            </div>
-            <div class="header__right">
-              <ul class="header__links">
-                <li class="header__links-item">
-                  <a href="mailto:info@sd.ru" class="header__links-link"
-                    >info@sd.ru</a
-                  >
-                </li>
-                <li class="header__links-item">
-                  <a href="tel:+7(495)0005252" class="header__links-link"
-                    >+7 (495) 000 52 52</a
-                  >
-                </li>
-              </ul>
-              <a href="" class="button">Заказать звонок</a>
-            </div>
-          </header>
-          <div class="hero__content">
-            <div class="hero__content-left">
-              <h1 class="site-title">Печатные платы</h1>
-              <div class="hero__content-desc">
+        	<div class="header__left">
+        	  <a href="#" class="logo">
+        	    <svg class="logo__image">
+        	      <!-- <use class="logo__image-icon" xlink:href="./img/icon_auto.svg#sprite-envelope"></use> -->
+        	    </svg>
+        	  </a>
+        	  <a href="#" class="burger-menu">
+        	    <span class="burger-menu__line"></span>
+        	    <span class="burger-menu__line"></span>
+        	  </a>
+        	</div>
+        	<div class="header__right">
+        	  <ul class="header__contacts header-contacts">
+        	    <li class="header-contacts__item">
+        	      <a href="mailto:info@sd.ru" class="header-contacts__link"
+        	        >info@sd.ru</a
+        	      >
+        	    </li>
+        	    <li class="header-contacts__item">
+        	      <a href="tel:+74950005252" class="header-contacts__link"
+        	        >+7 (495) 000 52 52</a
+        	      >
+        	    </li>
+        	  </ul>
+        	  <button class="button">Заказать звонок</button>
+        	</div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section hero">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <h1 class="page-title">Печатные платы</h1>
+              <div class="page-desc">
                 <p>
                   производство и монтаж, поставка комплектующих, блоков и
                   модулей
                 </p>
               </div>
+              <button class="button">Получить консультацию</button>
             </div>
-            <div class="hero__content-right">
-              <div class="hero__decor">
-                <img src="" alt="Печатные платы" class="hero__decor-image" />
-              </div>
+            <div class="hero__image">
+              <img src="" alt="" class="hero__image-pic" />
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section about">
-        <div class="container">
-          <div class="advantages">
-            <ul class="advantages__list">
+        </section>
+        <section class="about">
+          <div class="container">
+            <ul class="advantages">
               <li class="advantages__item advantage">
-                <div class="avantage__icon">
-                  <img src="" alt="" class="advantage__icon-pic" />
-                </div>
+                <svg class="advantage__icon">
+                  <use
+                    class="advantage__icon-pic"
+                    xlink:href="./img/icons/icon-stopwatch.svg"
+                  ></use>
+                </svg>
                 <h3 class="advantage__title">Оперативные сроки</h3>
                 <div class="advantage__desc">
                   <p>
@@ -74,9 +80,12 @@
                 </div>
               </li>
               <li class="advantages__item advantage">
-                <div class="avantage__icon">
-                  <img src="" alt="" class="advantage__icon-pic" />
-                </div>
+                <svg class="advantage__icon">
+                  <use
+                    class="advantage__icon-pic"
+                    xlink:href="img/sprite_auto.svg#icon-stopwatch"
+                  ></use>
+                </svg>
                 <h3 class="advantage__title">Крупные поставщики</h3>
                 <div class="advantage__desc">
                   <p>
@@ -88,9 +97,12 @@
                 </div>
               </li>
               <li class="advantages__item advantage">
-                <div class="avantage__icon">
-                  <img src="" alt="" class="advantage__icon-pic" />
-                </div>
+                <svg class="advantage__icon">
+                  <use
+                    class="advantage__icon-pic"
+                    xlink:href="./img/icons/icon-stopwatch.svg"
+                  ></use>
+                </svg>
                 <h3 class="advantage__title">Полная конфиденциальность</h3>
                 <div class="advantage__desc">
                   <p>
@@ -100,9 +112,12 @@
                 </div>
               </li>
               <li class="advantages__item advantage">
-                <div class="avantage__icon">
-                  <img src="" alt="" class="advantage__icon-pic" />
-                </div>
+                <svg class="advantage__icon">
+                  <use
+                    class="advantage__icon-pic"
+                    xlink:href="./img/icons/icon-stopwatch.svg"
+                  ></use>
+                </svg>
                 <h3 class="advantage__title">Персонализация стоимости</h3>
                 <div class="advantage__desc">
                   <p>
@@ -112,12 +127,7 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="info">
-            <div class="info__decor">
-              <img src="" alt="" class="info__decor-image" />
-            </div>
-            <div class="info__content">
+            <div class="info">
               <h2 class="section-title">О компании</h2>
               <div class="info__desc">
                 <p>
@@ -133,200 +143,197 @@
                   МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
                   Производители светотехники России.
                 </p>
-                <a href="" class="button">Подробнее</a>
+                <a href="#" class="button">Подробнее</a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section services">
-        <div class="container">
-          <h2 class="section-title">
-            Service Device предлагает следующие товары и услуги
-          </h2>
-          <ul class="services__list">
-            <li class="services__item service">
-              <a href="" class="service__link">
-                <div class="service__image">
-                  <img src="" alt="" class="service__image-pic" />
-                </div>
-                <div class="service__title">
-                  <p>Производство печатных плат</p>
-                </div>
-                <div class="service__decor">></div>
-              </a>
-            </li>
-            <li class="services__item service">
-              <a href="" class="service__link">
-                <div class="service__image">
-                  <img src="" alt="" class="service__image-pic" />
-                </div>
-                <div class="service__title">
-                  <p>Монтаж печатных плат</p>
-                </div>
-                <div class="service__decor">></div>
-              </a>
-            </li>
-            <li class="services__item service">
-              <a href="" class="service__link">
-                <div class="service__image">
-                  <img src="" alt="" class="service__image-pic" />
-                </div>
-                <div class="service__title">
-                  <p>Комплектующие для светотехники</p>
-                </div>
-                <div class="service__decor">></div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section feedback">
-        <div class="container">
-          <div class="feedback__content">
-            <div class="feedback__decor">
-              <img src="" alt="" class="feedback__decor-image" />
+        </section>
+        <section class="services">
+          <div class="container">
+            <h2 class="section-title">
+              Service Device предлагает следующие товары и услуги
+            </h2>
+            <ul class="services__list">
+              <li class="services__item service">
+                <a href="#" class="service__link">
+                  <div class="service__image">
+                    <img src="" alt="" class="service__image-pic" />
+                  </div>
+                  <div class="service__title">
+                    <p>Производство печатных плат</p>
+                  </div>
+                </a>
+              </li>
+              <li class="services__item service">
+                <a href="#" class="service__link">
+                  <div class="service__image">
+                    <img src="" alt="" class="service__image-pic" />
+                  </div>
+                  <div class="service__title">
+                    <p>Монтаж печатных плат</p>
+                  </div>
+                </a>
+              </li>
+              <li class="services__item service">
+                <a href="#" class="service__link">
+                  <div class="service__image">
+                    <img src="" alt="" class="service__image-pic" />
+                  </div>
+                  <div class="service__title">
+                    <p>Комплектующие для светотехники</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="container">
+            <div class="feedback__image">
+              <img src="" alt="" class="feedback__image-pic">
             </div>
-            <form action="" class="form">
+            <div class="form">
               <div class="form__wrapper">
-                <h2 class="form__title">Задались вопрос? Задайти их нам!</h2>
-                <div class="form__desc">
-                  <p>Мы проконсультируем Вас бесплатно</p>
-                </div>
                 <div class="form__row">
-                  <label for="" class="form__block">
-                    <input type="text" class="form__field" placeholder="Имя" />
+                  <label class="form__field">
+                    <input type="text" placeholder="Имя">
                   </label>
-                  <label for="" class="form__block">
-                    <input
-                      type="text"
-                      class="form__field"
-                      placeholder="Телефон"
-                    />
+                  <label class="form__field">
+                    <input type="tel" placeholder="Телефон">
                   </label>
                 </div>
                 <div class="form__row">
-                  <label for="" class="form__block">
-                    <textarea
-                      name=""
-                      class="form__commentary"
-                      id=""
-                      cols="30"
-                      rows="10"
-                      placedholder="Ваш вопрос"
-                    ></textarea>
+                  <label class="form__field">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
                   </label>
                 </div>
                 <div class="form__row">
-                  <a href="" class="button">Задать вопрос</a>
-                  <label class="form__block">
-                    <input
-                      type="checkbox"
-                      class="form__checkbox"
-                      name=""
-                      id=""
-                    />
+                  <button class="button submit-button">Задать вопрос</button>
+                  <label class="form__field">
+                    <input type="checkbox" name="" id="">
                     <p>Я согласен на обработку персональных данных</p>
                   </label>
                 </div>
               </div>
-            </form>
-          </div>
-          <footer class="footer">
-            <div class="footer__maincontent">
-              <div class="footer__links">
-                <a href="" class="logo">
-                  <img src="" alt="" class="logo__image" />
-                  <div class="logo__title">
-                    <p class="logo__title-text">Smart Device</p>
-                    <p class="logo__title-text">умные технологии</p>
-                  </div>
-                </a>
-                <div class="socials">
-                  <ul class="socials__list">
-                    <li class="socials__item">
-                      <a href="" class="socials__link">
-                        <img
-                          src=""
-                          alt="Ссылка на Фэйсбук"
-                          class="socials__icon"
-                        />
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="" class="socials__link">
-                        <img
-                          src=""
-                          alt="Ссылка на Одноклассники"
-                          class="socials__icon"
-                        />
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="" class="socials__link">
-                        <img
-                          src=""
-                          alt="Ссылка Вконтакте"
-                          class="socials__icon"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="footer__nav">
-                <nav class="navigation">
-                  <h3 class="navigation__title">Разделы сайта</h3>
-                  <ul class="navigation__list">
-                    <li class="navigation__item">
-                      <a href="" class="navigation__link">О компании</a>
-                    </li>
-                    <li class="navigation__item">
-                      <a href="" class="navigation__link">Продкуты</a>
-                    </li>
-                    <li class="navigation__item">
-                      <a href="" class="navigation__link"
-                        >Производство печатных плит</a
-                      >
-                    </li>
-                    <li class="navigation__item">
-                      <a href="" class="navigation__link"
-                        >Монтаж печатных плит</a
-                      >
-                    </li>
-                    <li class="navigation__item">
-                      <a href="" class="navigation__link">Комплектующие</a>
-                    </li>
-                    <li class="navigation__item">
-                      <a href="" class="navigation__link">Доставка</a>
-                    </li>
-                    <li class="navigation__item">
-                      <a href="" class="navigation__link">Контакты</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="footer__contacts">
-                <div class="contacts">
-                  <h3 class="contacts__title">Наш офис</h3>
-                  <p class="contacts__desc">
-                    г. Мытищи, Олимпийский проспект, д.10
-                  </p>
-                  <a href="tel:+7(495)589-40-50" class="contacts__link"
-                    >+7 (495) 589-40-50</a
-                  >
-                  <a href="tel:+7(925)003-87-67" class="contacts__link"
-                    >+7 (925) 003-87-67</a
-                  >
-                  <a href="tel:+7(926)926-080-79" class="contacts__link"
-                    >+7 (926) 926-080-79</a
-                  >
-                </div>
-              </div>
             </div>
-          </footer>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__maincontent">
+          <div class="footer__links">
+            <a href="#" class="logo">
+              <img src="" alt="" class="logo__image" />
+              <div class="logo__title">
+                <p class="logo__title-text">Smart Device</p>
+                <p class="logo__title-text">умные технологии</p>
+              </div>
+            </a>
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                      <use class="socials__icon-pic"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                      <use class="socials__icon-pic"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                      <use class="socials__icon-pic"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__nav">
+            <nav class="navigation">
+              <h3 class="navigation__title">Разделы сайта</h3>
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">О компании</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Продкуты</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link"
+                    >Производство печатных плит</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link"
+                    >Монтаж печатных плит</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Комплектующие</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Доставка</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__contacts">
+            <div class="contacts">
+              <h3 class="contacts__title">Наш офис</h3>
+              <p class="contacts__desc">
+                г. Мытищи, Олимпийский проспект, д.10
+              </p>
+              <a href="tel:+74955894050" class="contacts__link"
+                >+7 (495) 589-40-50</a
+              >
+              <a href="tel:+79250038767" class="contacts__link"
+                >+7 (925) 003-87-67</a
+              >
+              <a href="tel:+792692608079" class="contacts__link"
+                >+7 (926) 926-080-79</a
+              >
+            </div>
+          </div>
         </div>
-      </section>
+      </footer>
+    </div>
+    <div class="modal">
+      <form action="" class="form">
+        <div class="form__row">
+          <label class="form__field">
+            <input type="text" placeholder="Имя">
+          </label>
+        </div>
+        <div class="form__row">
+          <label class="form__field">
+            <input type="tel" placeholder="Телефон">
+          </label>
+        </div>
+        <div class="form__row">
+          <label class="form__field">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+          </label>
+        </div>
+        <div class="form__row">
+          <button class="button">Задать вопрос</button>
+        </div>
+        <div class="form__row">
+          <label class="form__field">
+            <input type="checkbox" name="" id="">
+            <p>Я согласен на обработку персональных данных</p>
+          </label>
+        </div>
+      </form>
     </div>
   </body>
 </html>
