@@ -89,3 +89,13 @@ img {
 label {
   cursor: pointer;
 }
+
+input,
+textarea {
+  border: none;
+  background-color: transparent;
+}
+
+input[type="checkbox"] {
+  display: none;
+}

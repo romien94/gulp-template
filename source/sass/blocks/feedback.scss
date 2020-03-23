@@ -1,0 +1,29 @@
+.feedback {
+    background-color: #00B2FF;
+}
+
+.feedback__container:before {
+    position: absolute;
+    content:'';
+    display: block;
+    width: 50%;
+    max-width: 511px;
+    height: 100%;
+    background-image: url('./../../img/background/airplane.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    top: 0;
+    left: 0;
+}
+
+.feedback__container {
+    max-width: 1170px;
+    padding: 98px 0 113px;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.feedback__form {
+    width: 50%;
+}

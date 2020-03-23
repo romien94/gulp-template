@@ -1,0 +1,14 @@
+.footer__container {
+    flex-direction: column;
+}
+
+.footer__maincontent {
+    padding: 65px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+}

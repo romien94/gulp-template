@@ -9,6 +9,21 @@
   color: white;
 }
 
+.hero:before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url('./../../img/background/plates.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 35%;
+  z-index: 5;
+  left: 50%;
+  height: 100%;
+  transform: translateX(20%);
+}
+
 .hero__container {
   flex-direction: column;
   justify-content: center;
@@ -34,16 +49,3 @@
   top: 1.9vh;
 }
 
-.hero:before {
-  position: absolute;
-  display: block;
-  content: '';
-  background-image: url('./../../img/background/plates.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 50%;
-  height: 100%;
-  z-index: 5;
-  left: 50%;
-  transform: translateY(10%);
-}

@@ -1,0 +1,48 @@
+.form__row {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.form__field {
+    display: flex;
+    flex: 1;
+    margin-right: 31px;
+    font-family: 'PT mono',monospace;
+    color: white;
+    align-items: center;
+}
+
+.form__field:last-child {
+    margin-right: 0;
+}
+
+.form__field input,
+.form__field textarea {
+    flex: 1;
+    background-color: #12bbff;
+    padding: 14px 17px;
+    color: white;
+}
+
+.form__field textarea {
+    min-height: 154px;
+}
+
+.form__field input::placeholder,
+.form__field textarea::placeholder {
+    font-family: 'PT mono',monospace;
+    color: white;
+}
+
+.form__row button {
+    margin-right: 31px;
+    flex: 1;
+}
+
+.form__field--checkbox:before {
+    content: '';
+    display: block;
+    min-width: 16px;
+    min-height: 16px;
+    border: 1px solid white;
+}
