@@ -1,4 +1,32 @@
 .contacts {
     display: flex;
     flex-direction: column;
+    font-size: 15px;
+}
+
+.contacts__wrapper {
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }   
+    @include phones {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.contacts__title {
+    margin-bottom: 3vh;
+    @include phones {
+        font-size: 15px;
+        text-transform: uppercase;
+        color:  #1B2D37;
+        font-family: 'Roboto Condensed';
+        font-weight: normal;
+        opacity: 1;
+    }
+}
+
+.contacts__link {
+    text-decoration: none;
 }

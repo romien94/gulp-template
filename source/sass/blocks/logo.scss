@@ -1,0 +1,26 @@
+.logo {
+  display: block;
+}
+
+.logo__image {
+  display: block;
+  position: relative;
+  z-index: 20;
+  height: 5.5vh;
+  width: 140px;
+}
+
+.logo__image--hidden {
+  @include phones {
+    display: none;
+  }
+}
+
+.logo__image--mobile {
+  display: none;
+  @include phones {
+    width: 38px;
+    height: 38px;
+    display: block;
+  }
+}

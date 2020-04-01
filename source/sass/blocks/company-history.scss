@@ -1,0 +1,12 @@
+.company-history {
+  @include tablets {
+    display: none;
+  }
+}
+
+.company-history--tablets {
+  display: none;
+  @include tablets {
+    display: block;
+  }
+}

@@ -1,3 +1,29 @@
 .navigation__list {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @include tablets {
+        flex-direction: column;
+    }
+    @include phones {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.navigation__title {
+    margin-bottom: 3vh;
+    @include phones {
+        font-size: 15px;
+        text-transform: uppercase;
+        color:  #1B2D37;
+        font-family: 'Roboto Condensed';
+        font-weight: normal;
+        opacity: 1;
+    }
+}
+
+.navigation__link {
+    text-decoration: none;
+    font-size: 15px;
 }

@@ -1,5 +1,24 @@
 .page-desc {
+  position: relative;
   font-family: 'PT mono', monospace;
   font-size: 22px;
   display: flex;
+  @include tablets {
+    font-size: 18px;
+  }
+  @include phones {
+    font-size: 16px;
+    padding-left: 48px;
+  }
+}
+
+.page-desc:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 33px;
+  height: 2px;
+  background-color: white;
+  top: 10px;
+  left: 0;
 }

@@ -2,11 +2,25 @@
   width: 100%;
   position: absolute;
   color: white;
+  top: 4vh;
+  z-index: 20;
+  @include tablets {
+    top: 3vh;
+  }
+  @include tablets {
+    top: 4.5vh;
+  }
 }
 
 .header__container {
   justify-content: space-between;
   align-items: center;
+  @include tablets {
+    padding: 0 25px;
+  }
+  @include phones {
+    padding: 0 15px;
+  }
 }
 
 .header-contacts {
@@ -15,15 +29,82 @@
   padding: 0 38px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  @include tablets {
+    justify-content: flex-end;
+    flex: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+.header-contacts__item {
+  margin-right: 34px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @include phones {
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .header-contacts__link {
+  display: flex;
+  align-items: center;
   font-family: 'PT mono', monospace;
   text-decoration: none;
+}
+
+.header-contacts__link-text {
+  @include tablets {
+    display: none;
+  }
+}
+
+.header-contacts__image {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.header__left {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 230px;
+  @include tablets {
+    width: auto;
+    flex: 1;
+    margin-right: 34px;
+  }
+  @include phones {
+    min-width: auto;
+    margin-right: 27px;
+  }
 }
 
 .header__right {
   width: 50%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  min-width: 520px;
+  @include tablets {
+    width: auto;
+    min-width: auto;
+  }
+  .button {
+    justify-self: flex-end;
+    @include tablets {
+      display: none;
+    }
+  }
 }

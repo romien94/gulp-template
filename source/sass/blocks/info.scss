@@ -3,6 +3,12 @@
   color: #666666;
   padding-left: 19%;
   padding-right: 7%;
+  @include tablets {
+    padding-left: 150px;
+  }
+  @include phones {
+    padding: 0;
+  }
 }
 
 .info:before {
@@ -17,6 +23,13 @@
   background-size: contain;
   left: 0;
   transform: translateX(-15%);
+  @include tablets {
+    min-height: 360px;
+    width: 250px;
+  }
+  @include phones {
+    display: none;
+  }
 }
 
 

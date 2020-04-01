@@ -16,8 +16,11 @@
         <div class="container header__container">
         	<div class="header__left">
         	  <a href="#" class="logo">
-        	    <svg class="logo__image">
-        	      <!-- <use class="logo__image-icon" xlink:href="./img/icon_auto.svg#sprite-envelope"></use> -->
+        	    <svg class="logo__image logo__image--hidden">
+        	      <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+        	    </svg>
+        	    <svg class="logo__image logo__image--mobile">
+        	      <use xlink:href="img/sprite_auto.svg#icon-logo--mobile"></use>
         	    </svg>
         	  </a>
         	  <a href="#" class="burger-menu">
@@ -28,10 +31,20 @@
         	<div class="header__right">
         	  <ul class="header__contacts header-contacts">
         	    <li class="header-contacts__item">
-        	      <a href="mailto:info@sd.ru" class="header-contacts__link">info@sd.ru</a>
+        	      <a href="mailto:info@sd.ru" class="header-contacts__link">
+                  <svg class="header-contacts__image">
+                    <use class="header-contacts__image-pic" xlink:href="img/sprite_auto.svg#icon-email"></use>
+                  </svg>
+                  <span class="header-contacts__link-text">info@sd.ru</span>
+                  </a>
         	    </li>
         	    <li class="header-contacts__item">
-        	      <a href="tel:+74950005252" class="header-contacts__link">+7 (495) 000 52 52</a>
+                <a href="tel:+74950005252" class="header-contacts__link">
+                  <svg class="header-contacts__image">
+                    <use class="header-contacts__image-pic" xlink:href="img/sprite_auto.svg#icon-phone"></use>
+                  </svg>
+                  <span class="header-contacts__link-text">+7 (495) 000 52 52</span>
+                  </a>
         	    </li>
         	  </ul>
         	  <button class="button">Заказать звонок</button>
@@ -49,7 +62,10 @@
                   модулей
                 </p>
               </div>
-              <button class="button button--blue">Получить бесплатную консультацию</button>
+              <button class="button button--blue">
+                <span class="button__text--desktop">Получить бесплатную консультацию</span>
+                <span class="button__text--mobile">Бесплатная консультация</span>
+              </button>
             </div>
             <div class="hero__image">
               <img src="" alt="" class="hero__image-pic">
@@ -61,7 +77,7 @@
             <ul class="advantages">
               <li class="advantages__item advantage">
                 <svg class="advantage__icon">
-                  <use class="advantage__icon-pic" xlink:href="./img/icons/icon-stopwatch.svg"></use>
+                  <use class="advantage__pic" xlink:href="img/sprite_auto.svg#icon-time"></use>
                 </svg>
                 <h3 class="advantage__title">Оперативные сроки</h3>
                 <div class="advantage__desc">
@@ -74,7 +90,7 @@
               </li>
               <li class="advantages__item advantage">
                 <svg class="advantage__icon">
-                  <use class="advantage__icon-pic" xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
+                  <use class="advantage__pic" xlink:href="img/sprite_auto.svg#icon-clients"></use>
                 </svg>
                 <h3 class="advantage__title">Крупные поставщики</h3>
                 <div class="advantage__desc">
@@ -88,7 +104,7 @@
               </li>
               <li class="advantages__item advantage">
                 <svg class="advantage__icon">
-                  <use class="advantage__icon-pic" xlink:href="./img/icons/icon-stopwatch.svg"></use>
+                  <use class="advantage__pic" xlink:href="img/sprite_auto.svg#icon-confidential"></use>
                 </svg>
                 <h3 class="advantage__title">Полная конфиденциальность</h3>
                 <div class="advantage__desc">
@@ -100,7 +116,7 @@
               </li>
               <li class="advantages__item advantage">
                 <svg class="advantage__icon">
-                  <use class="advantage__icon-pic" xlink:href="./img/icons/icon-stopwatch.svg"></use>
+                  <use class="advantage__pic" xlink:href="img/sprite_auto.svg#icon-cost"></use>
                 </svg>
                 <h3 class="advantage__title">Персонализация стоимости</h3>
                 <div class="advantage__desc">
@@ -127,7 +143,7 @@
                   МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
                   Производители светотехники России.
                 </p>
-                <a href="#" class="button">Подробнее</a>
+                <a href="#" class="button button--border_blue">Подробнее</a>
               </div>
             </div>
           </div>
@@ -140,9 +156,8 @@
             <ul class="services__list">
               <li class="services__item service">
                 <a href="#" class="service__link">
-                  <div class="service__image">
-                    <img src="./img/background/service-1.png" alt="" class="service__image-pic">
-                  </div>
+                  <img src="./img/background/service-1.png" alt="" class="service__image">
+                  <img src="./img/background/service-1--tablets.png" alt="" class="service__image service__image--tablets">
                   <div class="service__title">
                     <p>Производство печатных плат</p>
                   </div>
@@ -150,9 +165,8 @@
               </li>
               <li class="services__item service">
                 <a href="#" class="service__link">
-                  <div class="service__image">
-                    <img src="./img/background/service-2.png" alt="" class="service__image-pic">
-                  </div>
+                  <img src="./img/background/service-2.png" alt="" class="service__image">
+                  <img src="./img/background/service-2--tablets.png" alt="" class="service__image service__image--tablets">
                   <div class="service__title">
                     <p>Монтаж печатных плат</p>
                   </div>
@@ -160,9 +174,8 @@
               </li>
               <li class="services__item service">
                 <a href="#" class="service__link">
-                  <div class="service__image">
-                    <img src="./img/background/service-3.png" alt="" class="service__image-pic">
-                  </div>
+                  <img src="./img/background/service-3.png" alt="" class="service__image">
+                  <img src="./img/background/service-3--tablets.png" alt="" class="service__image service__image--tablets">
                   <div class="service__title">
                     <p>Комплектующие для светотехники</p>
                   </div>
@@ -196,8 +209,8 @@
                 <div class="form__row">
                   <button class="button submit-button">Задать вопрос</button>
                   <label class="form__field form__field--checkbox">
-                    <input type="checkbox" name="">
-                    <p>Я согласен на обработку персональных данных</p>
+                    <input class="form__checkbox" type="checkbox" id="personaldata1">
+                    <label class="form__field-checkbox" for="personaldata1">Я согласен на обработку персональных данных</label>
                   </label>
                 </div>
               </div>
@@ -210,32 +223,33 @@
           <div class="footer__maincontent">
             <div class="footer__links">
               <a href="#" class="logo">
-                <img src="" alt="" class="logo__image">
-                <div class="logo__title">
-                  <p class="logo__title-text">Smart Device</p>
-                  <p class="logo__title-text">умные технологии</p>
-                </div>
+                <svg class="logo__image">
+                  <use xlink:href="img/sprite_auto.svg#icon-logo--black"></use>
+                </svg>
               </a>
+              <div class="company-history company-history--tablets">
+                <p>1999-2018 SD Service Devices</p>
+              </div>
               <div class="socials">
                 <ul class="socials__list">
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <svg class="socials__icon">
-                        <use class="socials__icon-pic"></use>
+                      <svg class="socials__image">
+                        <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
                       </svg>
-                    </a>
+                    </a> 
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <svg class="socials__icon">
-                        <use class="socials__icon-pic"></use>
+                      <svg class="socials__image">
+                        <use xlink:href="img/sprite_auto.svg#icon-odnoklassniki"></use>
                       </svg>
-                    </a>
+                    </a> 
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <svg class="socials__icon">
-                        <use class="socials__icon-pic"></use>
+                      <svg class="socials__image">
+                        <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
                       </svg>
                     </a>
                   </li>
@@ -274,44 +288,66 @@
               </nav>
               <div class="contacts footer__contacts">
                 <h3 class="contacts__title">Наш офис</h3>
-                <p class="contacts__desc">
-                  г. Мытищи, Олимпийский проспект, д.10
-                </p>
-                <a href="tel:+74955894050" class="contacts__link">+7 (495) 589-40-50</a>
-                <a href="tel:+79250038767" class="contacts__link">+7 (925) 003-87-67</a>
-                <a href="tel:+792692608079" class="contacts__link">+7 (926) 926-080-79</a>
-              </div>
+                <div class="contacts__wrapper">
+                  <p class="contacts__desc">
+                    г. Мытищи, Олимпийский проспект, д.10
+                  </p>
+                  <a href="tel:+74955894050" class="contacts__link">+7 (495) 589-40-50</a>
+                  <a href="tel:+79250038767" class="contacts__link">+7 (925) 003-87-67</a>
+                  <a href="tel:+792692608079" class="contacts__link">+7 (926) 926-080-79</a>
+                </div>
+                </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="copyright">
+              <p>Все права защищены</p>
+            </div>
+            <div class="company-history">
+              <p>1999-2018 SD Service Devices</p>
+            </div>
+            <div class="confidential">
+              <a href="#" class="confidential__link">Условия конфидециальности</a>
+            </div>
+            <div class="developer">
+              <a href="#" class="developer__link">Developed by WOW Studio</a>
+            </div>
           </div>
         </div>
       </footer>
     </div>
     <div class="modal">
-      <form action="" class="form">
-        <div class="form__row">
-          <label class="form__field">
-            <input type="text" placeholder="Имя">
-          </label>
+      <div class="modal__wrapper">
+        <h3 class="modal__title">Закажите звонок</h3>
+        <div class="modal__desc">
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         </div>
-        <div class="form__row">
-          <label class="form__field">
-            <input type="tel" placeholder="Телефон">
-          </label>
-        </div>
-        <div class="form__row">
-          <label class="form__field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-          </label>
-        </div>
-        <div class="form__row">
-          <button class="button">Задать вопрос</button>
-        </div>
-        <div class="form__row">
-          <label class="form__field">
-            <input type="checkbox" name="" id="">
-            <p>Я согласен на обработку персональных данных</p>
-          </label>
-        </div>
-      </form>
+        <form action="" class="form">
+          <div class="form__row">
+            <div class="form__field">
+              <input type="text" placeholder="Имя">
+            </div>
+          </div>
+          <div class="form__row">
+            <label class="form__field">
+              <input type="tel" placeholder="Телефон">
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="form__field">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+            </label>
+          </div>
+          <div class="form__row">
+            <button class="button">Задать вопрос</button>
+          </div>
+          <div class="form__row">
+            <div class="form__field form-field--checkbox">
+              <input type="checkbox" name="" id="personaldata">
+              <label class="form__field-checkbox" for="personaldata">Я согласен на обработку персональных данных</label>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

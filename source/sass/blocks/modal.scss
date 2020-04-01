@@ -1,4 +1,42 @@
+
+.modal--active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
 .modal {
+    display: none;
+}
+
+.modal__wrapper {
+    position: relative;
     max-width: 470px;
     margin: 0 auto;
+    padding: 35px 39px;
+    background-color: #00B2FF;
+    color: white;
+}
+
+.modal__wrapper:after {
+    display: block;
+    content: 'x';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal__title {
+    font-family: 'Roboto Condensed';
+    font-size: 28px;
+}
+
+.modal__desc {
+    font-family: 'PT Mono';
 }

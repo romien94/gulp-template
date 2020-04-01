@@ -2,6 +2,19 @@
     background-color: #00B2FF;
 }
 
+.feedback__container {
+    max-width: 1170px;
+    padding: 98px 0 113px;
+    justify-content: flex-end;
+    position: relative;
+    @include tablets {
+        padding: 98px 12% 113px;
+    }
+    @include phones {
+        padding: 98px 15px 113px;
+    }
+}
+
 .feedback__container:before {
     position: absolute;
     content:'';
@@ -15,15 +28,16 @@
     background-size: contain;
     top: 0;
     left: 0;
+    @include tablets {
+        display: none;
+    }
 }
 
-.feedback__container {
-    max-width: 1170px;
-    padding: 98px 0 113px;
-    justify-content: flex-end;
-    position: relative;
-}
+
 
 .feedback__form {
     width: 50%;
+    @include tablets {
+        width: 100%;
+    }
 }

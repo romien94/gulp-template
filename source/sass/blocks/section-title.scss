@@ -2,6 +2,9 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 36px;
   color: white;
+  @include phones {
+    font-size: 28px;
+  }
 }
 
 .section-title--gray {

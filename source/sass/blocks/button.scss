@@ -4,12 +4,43 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
   color: white;
   text-transform: uppercase;
   border: 1px solid white;
+  @include tablets {
+    padding: 2.7vh 2.8rem 2.4vh;
+  }
+  @include phones {
+    width: 100%;
+  }
 }
 
 .button--blue{
   background-color: #00B2FF;
-  border-color: transparent;
+  text-decoration: none;
+  border-color: #00B2FF;
+  padding: 1.7vh 2.8rem 1.4vh;
+  color: white;
+  @include phones {
+    padding: 2.7vh 1.8rem 2.4vh;
+  }
+}
+
+.button--border_blue {
+  border-color: #00B2FF;
+  color: #00B2FF;
+}
+
+.button__text--desktop {
+  @include phones {
+    display: none;
+  }
+}
+
+.button__text--mobile {
+  display: none;
+  @include phones {
+    display: inline-block;
+  }
 }
