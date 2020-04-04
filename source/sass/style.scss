@@ -1,6 +1,10 @@
+//fonts
+@import "./layout/fonts.scss";
+
 // layout
 @import "./layout/media.scss";
 @import "./layout/base.scss";
+@import "./layout/mixins.scss";
 
 // blocks
 @import "./blocks/hero.scss";

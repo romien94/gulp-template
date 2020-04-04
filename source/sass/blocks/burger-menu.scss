@@ -4,10 +4,25 @@
   width: 36px;
   height: 13px;
   justify-content: space-between;
+  position: relative;
 }
 
-.burger-menu__line {
+.burger-menu:before,
+.burger-menu:after {
+  position: absolute;
+  content: '';
+  height: 1px;
   width: 100%;
   background-color: white;
-  height: 1px;
+}
+
+.burger-menu:before {
+  top: 0;
+  left: 0;
+}
+
+.burger-menu:after {
+
+  bottom: 0;
+  left: 0;
 }

@@ -8,10 +8,12 @@
   z-index: 20;
   height: 5.5vh;
   width: 225px;
+
   @include tablets {
     height: 6vh;
     width: 205px;
   }
+
   @include phones {
     height: 7vh;
     width: 220px;
@@ -27,6 +29,7 @@
 
 .logo__image--mobile {
   display: none;
+
   @include phones {
     width: 38px;
     height: 38px;

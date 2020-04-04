@@ -1,47 +1,50 @@
 .contacts {
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
 }
 
 .contacts--active {
-    .contacts__wrapper {
-        height: auto;
-        margin-bottom: 3vh;
-    }
+  .contacts__wrapper {
+    height: auto;
+    margin-bottom: 3vh;
+  }
 }
 
 .contacts__wrapper {
-    @include tablets {
-        display: flex;
-        flex-direction: column;
-    }   
-    @include phones {
-        height: 0;
-        overflow: hidden;
-    }
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include phones {
+    height: 0;
+    overflow: hidden;
+  }
 }
 
 .contacts__desc,
 .contacts__link {
-    margin-bottom: .5vh;
+  margin-bottom: .5vh;
 }
 
 .contacts__title {
-    text-transform: uppercase;
-    font-family: 'Roboto Condensed';
-    margin-bottom: 3vh;
-    @include tablets {
-        font-size: inherit;
-    }
-    @include phones {
-        color:  #1B2D37;
-        font-weight: normal;
-        opacity: 1;
-        margin-bottom: 4vh;
-    }
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  margin-bottom: 3vh;
+
+  @include tablets {
+    font-size: inherit;
+  }
+
+  @include phones {
+    color: #1B2D37;
+    font-weight: normal;
+    opacity: 1;
+    margin-bottom: 4vh;
+  }
 }
 
 .contacts__link {
-    text-decoration: none;
+  text-decoration: none;
 }

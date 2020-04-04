@@ -6,10 +6,12 @@
 
 .company-history--tablets {
   display: none;
+
   @include tablets {
     display: block;
     opacity: .5;
   }
+
   @include phones {
     margin-bottom: 4vh;
   }

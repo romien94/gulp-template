@@ -2,17 +2,19 @@ html {
   @include desktop {
     font-size: 15px;
   }
+
   @include tablets {
     font-size: 14px;
   }
 }
+
 body,
 html {
   height: 100%;
 }
 
 body {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -22,21 +24,30 @@ body {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
-  position: relative;  
+  position: relative;
   margin: 0 auto;
 }
 
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1411px;
+  max-width: 1460px;
   display: flex;
   flex: 1;
+  padding: 0 20px;
 }
 
 .section {
   display: flex;
   flex-direction: column;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 button {
@@ -95,8 +106,4 @@ textarea {
   border: none;
   background-color: transparent;
   resize: none;
-}
-
-input[type="checkbox"] {
-  display: none;
 }

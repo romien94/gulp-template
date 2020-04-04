@@ -1,5 +1,5 @@
 .page-title {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 80px;
   text-transform: uppercase;
   font-weight: bold;
@@ -7,11 +7,13 @@
   max-width: 60%;
   margin-bottom: 1.5vh;
   z-index: 30;
+
   @include tablets {
     font-size: 60px;
     line-height: 70px;
     margin-bottom: 3vh;
   }
+
   @include phones {
     font-size: 40px;
     line-height: 47px;

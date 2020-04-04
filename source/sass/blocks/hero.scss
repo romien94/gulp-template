@@ -1,14 +1,16 @@
 .hero {
   position: relative;
   padding: 33vh 0 30vh;
-  background-image: url('./../../img/background/hero.png');
+  background-image: url("./../img/background/hero.png");
   background-color: rgba($color: #1B2D37, $alpha: 1);
   background-position: center center;
   background-repeat: no-repeat;
   color: white;
+
   @include tablets {
     padding: 22vh 90px 19vh;
   }
+
   @include phones {
     padding: 34vh 15px 8vh;
   }
@@ -18,7 +20,7 @@
 .hero:after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background-repeat: no-repeat;
   background-position: center center;
   top: 50%;
@@ -29,14 +31,16 @@
 .hero:before {
   width: 39%;
   height: 59%;
-  background-image: url('./../../img/background/plates.png');
-  transform: translate(-19%,-36%);
+  background-image: url("./../img/background/plates.png");
+  transform: translate(-19%, -36%);
   z-index: 5;
   background-size: contain;
+
   @include tablets {
     width: 62%;
-    transform: translate(45%,-64%);
+    transform: translate(45%, -64%);
   }
+
   @include phones {
     width: 100%;
     transform: translate(10%, -80%);
@@ -44,20 +48,42 @@
 }
 
 .hero:after {
-  background-image: url('../../img/background/triangles.png');
+  background-image: url("./../img/background/triangles.png");
   width: 37%;
-  z-index: 20;
+  // z-index: 30;
   right: 0;
-  transform: translate(-24%,-38%);
+  transform: translate(-24%, -38%);
+
   @include tablets {
     width: 64%;
-    transform: translate(31%,-70%);
+    transform: translate(31%, -70%);
+  }
+
+  height: 59%;
+  background-size: contain;
+
+  @include phones {
+    width: 150%;
+    transform: translate(69%, -69%);
   }
 }
 
 .hero__container {
+  position: relative;
   flex-direction: column;
   justify-content: center;
+}
+
+.hero__container:after {
+  display: block;
+  content: '';
+  align-self: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  opacity: .5;
 }
 
 .hero__content {
@@ -67,10 +93,12 @@
   max-width: 50%;
   padding-left: 90px;
   align-items: flex-start;
+
   @include tablets {
     padding-left: 50px;
     max-width: 73%;
   }
+
   @include phones {
     max-width: 100%;
     padding: 0;
@@ -80,18 +108,19 @@
 .hero__content:before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 66px;
   height: .2vh;
   background-color: white;
   transform: translateX(-120%);
   top: 1.9vh;
+
   @include tablets {
     width: 33px;
     transform: translateX(-135%);
   }
+
   @include phones {
     display: none;
   }
 }
-

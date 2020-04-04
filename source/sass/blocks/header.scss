@@ -4,9 +4,11 @@
   color: white;
   top: 4vh;
   z-index: 20;
+
   @include tablets {
     top: 2.5vh;
   }
+
   @include phones {
     top: 2vh;
   }
@@ -15,9 +17,12 @@
 .header__container {
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+
   @include tablets {
     padding: 0 25px;
   }
+
   @include phones {
     padding: 0 15px;
   }
@@ -26,10 +31,11 @@
 .header-contacts {
   display: flex;
   flex: 1;
-  padding: 0 38px;
+  padding: 0px 38px 0 57px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
   @include tablets {
     justify-content: flex-end;
     flex: 0;
@@ -40,13 +46,16 @@
 
 .header-contacts__item {
   margin-right: 34px;
+
   &:last-child {
     margin-right: 0;
   }
+
   @include phones {
     width: 23px;
     height: 23px;
     margin-right: 24px;
+
     &:last-child {
       margin-right: 0;
     }
@@ -56,8 +65,21 @@
 .header-contacts__link {
   display: flex;
   align-items: center;
-  font-family: 'PT mono', monospace;
+  font-family: "PT mono", monospace;
   text-decoration: none;
+}
+
+.header-contacts__link:hover {
+  animation: fadein 1s infinite;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header-contacts__link-text {
@@ -70,6 +92,7 @@
   width: 20px;
   height: 20px;
   margin-right: 20px;
+
   @include tablets {
     width: 25px;
     height: 25px;
@@ -79,15 +102,16 @@
 
 .header__left {
   display: flex;
-  width: 25%;
   align-items: center;
   justify-content: space-between;
   min-width: 230px;
+
   @include tablets {
     width: auto;
     flex: 1;
     margin-right: 35px;
   }
+
   @include phones {
     min-width: auto;
     margin-right: 22px;
@@ -95,18 +119,20 @@
 }
 
 .header__right {
-  width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   min-width: 520px;
+
   @include tablets {
     width: auto;
     min-width: auto;
   }
+
   .button {
     justify-self: flex-end;
+
     @include tablets {
       display: none;
     }

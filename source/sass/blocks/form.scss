@@ -1,92 +1,103 @@
 .form__row {
-    display: flex;
-    margin-bottom: 4.5vh;
-    align-items: center;
-    @include tablets {
-        margin-bottom: 5.5vh;
-    }
-    @include phones {
-        flex-direction: column;
-        margin-bottom: 3.5vh;
-    }
+  display: flex;
+  margin-bottom: 4.5vh;
+  align-items: center;
+
+  @include tablets {
+    margin-bottom: 5.5vh;
+  }
+
+  @include phones {
+    flex-direction: column;
+    margin-bottom: 3.5vh;
+  }
 }
 
 .form__row:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .form__field {
-    display: flex;
-    flex: 1;
-    margin-right: 31px;
-    font-family: 'PT mono',monospace;
-    color: white;
-    align-items: center;
-    @include phones {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 5vh;
-        &:last-child {
-            margin-bottom: 0;
-        }
+  display: flex;
+  flex: 1;
+  margin-right: 31px;
+  font-family: "PT mono", monospace;
+  color: white;
+  align-items: center;
+
+  @include phones {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5vh;
+
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 }
 
 .form__field:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .form__field input,
 .form__field textarea {
-    flex: 1;
-    background-color: #12bbff;
-    padding: 14px 17px;
-    color: white;
+  flex: 1;
+  background-color: #12bbff;
+  padding: 14px 17px;
+  color: white;
 }
 
 .form__field input {
-    width: 50%;
-    @include phones {
-        width: 100%;
-    }
+  width: 50%;
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .form__field textarea {
-    min-height: 154px;
-    @include phones {
-        min-height: 102px;
-    }
+  min-height: 154px;
+
+  @include phones {
+    min-height: 102px;
+  }
 }
 
 .form__field input::placeholder,
 .form__field textarea::placeholder {
-    font-family: 'PT mono',monospace;
-    color: white;
+  font-family: "PT mono", monospace;
+  color: white;
+}
+
+.form__field--checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
 }
 
 .form__field-checkbox {
-    display: flex;
-    align-items: center;
-    position: relative;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .form__field-checkbox:before {
-    content: '';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 16px;
-    min-height: 16px;
-    margin-right: 14px;
-    border: 1px solid white;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  min-height: 16px;
+  margin-right: 14px;
+  border: 1px solid white;
 }
 
-input[type="checkbox"]:checked ~ .form__field-checkbox:after {
-    content: 'v';
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 0;
-    transform: translate(50%,-50%);
+input[type="checkbox"]:checked~.form__field-checkbox:after {
+  content: "v";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
 }

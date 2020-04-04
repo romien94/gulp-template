@@ -6,16 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Стартовый шаблон</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer="" src="node_modules/svgxuse/svgxuse.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container header__container">
           <div class="header__left">
-            <a href="#" class="logo">
+            <a class="logo">
               <svg class="logo__image logo__image--hidden">
                 <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
               </svg>
@@ -23,10 +22,8 @@
                 <use xlink:href="img/sprite_auto.svg#icon-logo--mobile"></use>
               </svg>
             </a>
-            <a href="#" class="burger-menu">
-              <span class="burger-menu__line"></span>
-              <span class="burger-menu__line"></span>
-            </a>
+            <button class="burger-menu">
+            </button>
           </div>
           <div class="header__right">
             <ul class="header__contacts header-contacts">
@@ -47,7 +44,7 @@
                 </a>
               </li>
             </ul>
-            <button class="button">Заказать звонок</button>
+            <a href="#" class="button callme-button">Заказать звонок</a>
           </div>
         </div>
       </header>
@@ -62,14 +59,12 @@
                   модулей
                 </p>
               </div>
-              <button class="button button--blue">
-                <span class="button__text--desktop">Получить бесплатную консультацию</span>
-                <span class="button__text--mobile">Бесплатная консультация</span>
-              </button>
+              <a class="button consult-button button--blue">
+                <span class="consult-button__text--desktop">Получить бесплатную консультацию</span>
+                <span class="consult-button__text--mobile">Бесплатная консультация</span>
+              </a>
             </div>
-            <div class="hero__image">
-              <img src="" alt="" class="hero__image-pic">
-            </div>
+            <a class="scroll-button">Скролл вниз</a>
           </div>
         </section>
         <section class="about">
@@ -82,7 +77,8 @@
                 <h3 class="advantage__title">Оперативные сроки</h3>
                 <div class="advantage__desc">
                   <p>
-                    Усовершенствованная логистическая система позволяет нам <br class="advantage__br--mobile">
+                    Усовершенствованная логистическая система позволяет нам
+                    <br class="advantage__br--mobile">
                     просчитывать стоимость, производить и доставлять заказы плат
                     и комплектующих в самые короткие сроки.
                   </p>
@@ -106,7 +102,9 @@
                 <svg class="advantage__icon">
                   <use class="advantage__pic" xlink:href="img/sprite_auto.svg#icon-confidential"></use>
                 </svg>
-                <h3 class="advantage__title">Полная <br class="advantage__br--mobile">конфиденциальность</h3>
+                <h3 class="advantage__title">
+                  Полная <br class="advantage__br--mobile">конфиденциальность
+                </h3>
                 <div class="advantage__desc">
                   <p>
                     По желанию клиента мы обеспечиваем полную
@@ -122,7 +120,8 @@
                 <div class="advantage__desc">
                   <p>
                     Мы подбираем определенную фабрику, поставщиков, вид
-                    доставки, чтобы <br class="advantage__br--mobile"> установить ту цену, которая Вас устраивает.
+                    доставки, чтобы <br class="advantage__br--mobile">
+                    установить ту цену, которая Вас устраивает.
                   </p>
                 </div>
               </li>
@@ -201,31 +200,34 @@
         </section>
         <section class="feedback">
           <div class="container feedback__container">
-            <div class="feedback__image">
-              <img src="" alt="" class="feedback__image-pic">
-            </div>
             <div class="form feedback__form">
               <div class="form__wrapper">
-                <h1 class="feedback__section-title section-title">Остались вопросы? Задайте их нам!</h1>
-                <div class="feedback__section-desc section-desc">Мы проконсультируем Вас бесплатно</div>
+                <h1 class="feedback__section-title section-title">
+                  Остались вопросы? Задайте их нам!
+                </h1>
+                <div class="feedback__section-desc section-desc">
+                  Мы проконсультируем Вас бесплатно
+                </div>
                 <div class="form__row">
                   <label class="form__field">
-                    <input type="text" placeholder="Имя">
+                    <input type="text" name="name" placeholder="Имя">
                   </label>
                   <label class="form__field">
-                    <input type="tel" placeholder="Телефон">
+                    <input type="tel" name="phone" placeholder="Телефон">
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__field">
-                    <textarea name="" placeholder="Ваш вопрос"></textarea>
+                    <textarea name="commentary" placeholder="Ваш вопрос"></textarea>
                   </label>
                 </div>
                 <div class="form__row">
                   <button class="button submit-button">Задать вопрос</button>
-                  <label class="form__field form__field--checkbox">
-                    <input class="form__checkbox" type="checkbox" id="personaldata1">
-                    <label class="form__field-checkbox" for="personaldata1">Я согласен на обработку персональных данных</label>
+                  <label class="form__field form__field--checkbox" tabindex="0">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="personaldata1">
+                    <p class="form__field-checkbox" for="personaldata1">
+                      Я согласен на обработку персональных данных
+                    </p>
                   </label>
                 </div>
               </div>
@@ -358,7 +360,7 @@
             <button class="button">Задать вопрос</button>
           </div>
           <div class="form__row">
-            <div class="form__field form-field--checkbox">
+            <div class="form__field form__field--checkbox">
               <input type="checkbox" name="" id="personaldata">
               <label class="form__field-checkbox" for="personaldata">Я согласен на обработку персональных данных</label>
             </div>

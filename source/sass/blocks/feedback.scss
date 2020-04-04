@@ -1,58 +1,65 @@
 .feedback {
-    background-color: #00B2FF;
-    padding: 9.5vh 11% 14vh;
-    @include tablets {
-        padding: 9.5vh 12% 12vh;
-    }
-    @include phones {
-        padding: 3vh 15px 5vh;
-    }
+  background-color: #00B2FF;
+  padding: 9.5vh 11% 14vh;
+
+  @include tablets {
+    padding: 9.5vh 12% 12vh;
+  }
+
+  @include phones {
+    padding: 3vh 15px 5vh;
+  }
 }
 
 .feedback__container {
-    max-width: 1170px;
-    justify-content: flex-end;
-    position: relative;
+  max-width: 1170px;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .feedback__container:before {
-    position: absolute;
-    content:'';
-    display: block;
-    width: 50%;
-    max-width: 511px;
-    height: 100%;
-    background-image: url('./../../img/background/airplane.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    top: 0;
-    left: 0;
-    @include tablets {
-        display: none;
-    }
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50%;
+  max-width: 511px;
+  height: 100%;
+  background-image: url("./../img/background/airplane.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  top: 0;
+  left: 0;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .feedback__section-title {
-    margin-bottom: 1vh;
-    @include tablets {
-        margin-bottom: 2vh;
-    }
+  margin-bottom: 1vh;
+
+  @include tablets {
+    margin-bottom: 2vh;
+  }
 }
 
 .feedback__section-desc {
-    margin-bottom: 5.5vh;
-    @include tablets {
-        margin-bottom: 6.5vh;
-    }
-    @include phones {
-        margin-bottom: 2.5vh;
-    }
+  margin-bottom: 5.5vh;
+
+  @include tablets {
+    margin-bottom: 6.5vh;
+  }
+
+  @include phones {
+    margin-bottom: 2.5vh;
+  }
 }
 
 .feedback__form {
-    width: 48%;
-    @include tablets {
-        width: 100%;
-    }
+  width: 48%;
+
+  @include tablets {
+    width: 100%;
+  }
 }
