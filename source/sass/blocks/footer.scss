@@ -1,6 +1,14 @@
 .footer {
     font-family: 'PT mono',monospace;
     color: #1B2D37;
+    padding: 7vh 0 1vh;
+    @include tablets {
+        padding: 2vh 0 1vh;
+        font-size: 13px;
+    }
+    @include phones {
+        padding: 5vh 0 1vh;
+    }
 }
 
 .footer__container {
@@ -11,23 +19,53 @@
 }
 
 .footer__maincontent {
-    padding: 65px 0;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 6vh;
     @include tablets {
         flex-wrap: wrap;
+    }
+    @include phones {
+        margin-bottom: 1vh;
     }
 }
 
 .footer__contacts {
     display: flex;
     flex-direction: column;
+    width: 24%;
+    @include tablets {
+        width: 48%;
+    }
+    @include phones {
+        width: 100%;
+        position: relative;
+    }
 }
 
 .footer__navigation {
-    width: 28%;
+    width: 32%;
     @include tablets {
+        width: 50%;
+    }
+    @include phones {
         width: 100%;
+        position: relative;
+        margin-bottom: 3vh;
+    }
+}
+
+.footer__contacts:after,
+.footer__navigation:after {
+    @include phones {
+        position: absolute;
+        display: block;
+        content: '';
+        height: 2px;
+        width: 1000%;
+        background-color: rgba(#626962,0.2);
+        bottom: 0;
+        left: -100%;
     }
 }
 
@@ -40,9 +78,13 @@
         width: 100%;
         flex-direction: row;
         align-items: center;
+        padding-bottom: 3vh;
+        margin-bottom: 4vh;
     }
     @include phones {
         flex-direction: column;
+        padding-bottom: 7vh;
+        margin-bottom: 3vh;
     }
 }
 
@@ -62,7 +104,15 @@
 .footer__bottom {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    padding: 2.5vh 0 0;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @include tablets {
+        justify-content: space-between;
+        padding: 1.8vh 0 0;
+    }
     @include phones {
         flex-direction: column;
         align-items: center;
@@ -78,4 +128,25 @@
     background-color: rgba(#626962,0.2);
     top: 0;
     left: -100%;
+    @include phones {
+        display: none;
+    }
+}
+
+.footer__copyright {
+    margin-right: 5.5%;
+}
+
+.footer__company-history {
+    margin-right: 10.5%;
+}
+
+.footer__confidential {
+    margin-right: 28.5%;
+    @include tablets {
+        margin-right: 0;
+    }
+    @include phones {
+        margin-bottom: 3vh;
+    }
 }

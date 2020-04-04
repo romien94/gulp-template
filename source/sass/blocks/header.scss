@@ -5,10 +5,10 @@
   top: 4vh;
   z-index: 20;
   @include tablets {
-    top: 3vh;
+    top: 2.5vh;
   }
-  @include tablets {
-    top: 4.5vh;
+  @include phones {
+    top: 2vh;
   }
 }
 
@@ -44,6 +44,8 @@
     margin-right: 0;
   }
   @include phones {
+    width: 23px;
+    height: 23px;
     margin-right: 24px;
     &:last-child {
       margin-right: 0;
@@ -69,6 +71,8 @@
   height: 20px;
   margin-right: 20px;
   @include tablets {
+    width: 25px;
+    height: 25px;
     margin-right: 0;
   }
 }
@@ -82,11 +86,11 @@
   @include tablets {
     width: auto;
     flex: 1;
-    margin-right: 34px;
+    margin-right: 35px;
   }
   @include phones {
     min-width: auto;
-    margin-right: 27px;
+    margin-right: 22px;
   }
 }
 

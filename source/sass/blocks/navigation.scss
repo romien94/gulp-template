@@ -1,7 +1,14 @@
+
+.navigation--active {
+    .navigation__list {
+        height: auto;
+        margin-bottom: 3vh;
+    }
+}
+
 .navigation__list {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     @include tablets {
         flex-direction: column;
     }
@@ -11,17 +18,34 @@
     }
 }
 
+.navigation__item {
+    margin-bottom: .5vh;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
 .navigation__title {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
     margin-bottom: 3vh;
-    @include phones {
+    @include tablets {
         font-size: 15px;
-        text-transform: uppercase;
+    }
+    @include phones {       
         color:  #1B2D37;
-        font-family: 'Roboto Condensed';
         font-weight: normal;
         opacity: 1;
     }
 }
+
+.navigation__column {
+    margin-right: 70px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
 
 .navigation__link {
     text-decoration: none;

@@ -3,22 +3,30 @@
   font-family: 'PT mono', monospace;
   font-size: 22px;
   display: flex;
+  margin-bottom: 5vh;
+  line-height: 34px;
   @include tablets {
     font-size: 18px;
+    line-height: 156.8%;
+    margin-bottom: 7vh;
   }
   @include phones {
     font-size: 16px;
     padding-left: 48px;
+    margin-bottom: 5vh;
   }
 }
 
 .page-desc:before {
   content: '';
   position: absolute;
-  display: block;
+  display: none;
   width: 33px;
   height: 2px;
   background-color: white;
   top: 10px;
   left: 0;
+  @include phones {
+    display: block;
+  }
 }

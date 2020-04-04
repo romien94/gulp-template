@@ -5,10 +5,12 @@
   font-weight: bold;
   letter-spacing: 0.07em;
   max-width: 60%;
+  margin-bottom: 1.5vh;
   z-index: 30;
   @include tablets {
     font-size: 60px;
     line-height: 70px;
+    margin-bottom: 3vh;
   }
   @include phones {
     font-size: 40px;

@@ -1,10 +1,12 @@
 .info {
+  font-family: 'PT mono',monospace;
   position: relative;
   color: #666666;
-  padding-left: 19%;
+  padding-left: 190px;
   padding-right: 7%;
   @include tablets {
-    padding-left: 150px;
+    padding-left: 205px;
+    padding-right: 0;
   }
   @include phones {
     padding: 0;
@@ -16,24 +18,55 @@
   content: '';
   display: block;
   background-image: url('./../../img/background/year.png');
-  width: 18%;
+  width: 125px;
   min-height: 330px;
   background-repeat: center center;
   background-repeat: no-repeat;
   background-size: contain;
   left: 0;
-  transform: translateX(-15%);
   @include tablets {
     min-height: 360px;
-    width: 250px;
+    width: 160px;
+    transform: translate(13%, 1%);
   }
   @include phones {
     display: none;
   }
 }
 
+.info__section-title {
+  margin-bottom: 2.5vh;
+  @include phones {
+    margin-bottom: 2vh;
+  }
+}
 
+.info__desc {
+  margin-bottom: 6vh;
+  @include tablets {
+    display: none;
+  }
+  @include phones {
+    margin-bottom: 5vh;
+  }
+}
+
+.info__desc--tablets {
+  display: none;
+  @include tablets {
+    display: block;
+  }
+}
 
 .info__desc p {
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
+  @include tablets {
+    margin-bottom: 3vh;
+  }
+  @include phones {
+    margin-bottom: 4.5vh;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

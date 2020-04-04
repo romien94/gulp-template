@@ -7,7 +7,16 @@
   position: relative;
   z-index: 20;
   height: 5.5vh;
-  width: 140px;
+  width: 225px;
+  @include tablets {
+    height: 6vh;
+    width: 205px;
+  }
+  @include phones {
+    height: 7vh;
+    width: 220px;
+    margin-bottom: 2.4vh;
+  }
 }
 
 .logo__image--hidden {

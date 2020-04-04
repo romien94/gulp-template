@@ -4,6 +4,13 @@
     font-size: 15px;
 }
 
+.contacts--active {
+    .contacts__wrapper {
+        height: auto;
+        margin-bottom: 3vh;
+    }
+}
+
 .contacts__wrapper {
     @include tablets {
         display: flex;
@@ -15,15 +22,23 @@
     }
 }
 
+.contacts__desc,
+.contacts__link {
+    margin-bottom: .5vh;
+}
+
 .contacts__title {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
     margin-bottom: 3vh;
+    @include tablets {
+        font-size: inherit;
+    }
     @include phones {
-        font-size: 15px;
-        text-transform: uppercase;
         color:  #1B2D37;
-        font-family: 'Roboto Condensed';
         font-weight: normal;
         opacity: 1;
+        margin-bottom: 4vh;
     }
 }
 

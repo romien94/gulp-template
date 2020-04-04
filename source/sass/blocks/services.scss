@@ -1,7 +1,20 @@
 .services {
   background-color: #1B2D37;
   color: white;
-  padding: 10.7vh 0;
+  padding: 9.2vh 0 13.4vh;
+  @include tablets {
+    padding: 6vh 0 3.5vh;
+  }
+  @include phones {
+    padding: 5.5vh 0 4.5vh;
+  }
+}
+
+.services__section-title {
+  margin-bottom: 6vh;
+  @include phones {
+    margin-bottom: 5vh;
+  }
 }
 
 .services__container {
@@ -10,8 +23,8 @@
   @include tablets {
     padding: 0 25px;
   }
-  @include tablets {
-    padding: 0 15px;
+  @include phones {
+    padding: 0 10px 0 15px;
   }
 }
 
@@ -96,4 +109,14 @@
   z-index: 20;
   font-size: 20px;
   font-family: 'Roboto Condensed', sans-serif;
+  @include tablets {
+    top: 15.5%;
+    left: 6%;
+    width: 25%;
+  }
+  @include tablets {
+    top: 9.5%;
+    left: 12%;
+    width: 65%;
+  }
 }
