@@ -6,6 +6,7 @@
 
 .company-history--tablets {
   display: none;
+  letter-spacing: 0.05em;
 
   @include tablets {
     display: block;

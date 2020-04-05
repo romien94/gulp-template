@@ -14,6 +14,9 @@
   height: 1px;
   width: 100%;
   background-color: white;
+  @include tablets {
+    transform: translateY(-2px);
+  }
 }
 
 .burger-menu:before {

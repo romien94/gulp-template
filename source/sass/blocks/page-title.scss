@@ -5,13 +5,13 @@
   font-weight: bold;
   letter-spacing: 0.07em;
   max-width: 60%;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1.9vh;
   z-index: 30;
 
   @include tablets {
     font-size: 60px;
     line-height: 70px;
-    margin-bottom: 3vh;
+    margin-bottom: 4vh;
   }
 
   @include phones {

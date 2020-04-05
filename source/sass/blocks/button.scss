@@ -1,5 +1,5 @@
 .button {
-  padding: 12px 24px;
+  padding: 12px 28px;
   border-radius: 5px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
@@ -20,6 +20,7 @@
 
 .callme-button {
   font-size: 14px;
+  letter-spacing: 0.05em;
 }
 
 .button--blue {
@@ -45,8 +46,10 @@
 .button--border_blue {
   border-color: #00b2ff;
   color: #00b2ff;
-  padding: 12px 47px;
+  padding: 13px 49px;
   font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: 16px;
 }
 
 .button--border_blue:hover {
@@ -70,11 +73,14 @@
 }
 
 .submit-button {
-  min-width: 48%;
+  min-width: 47%;
   margin-right: 38px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 16px;
 
-  @include tablets {
-    font-size: 14px;
+  @include tablets {    
+    margin-right: 42px;
     padding: 2vh 2.8rem 2vh;
   }
 
@@ -87,9 +93,14 @@
 .scroll-button {
   align-self: flex-start;
   position: absolute;
-  bottom: 0;
+  top: 100%;
   left: 0;
-  transform: rotate(-90deg);
+  font-family: $ptmono;
+  transform: rotate(-90deg) translate(-140%,-16%);
   font-size: 14px;
   opacity: .5;
+  line-height: 16px;
+  @include tablets {
+    display: none;
+  }
 }

@@ -9,12 +9,12 @@
   }
 
   @include phones {
-    margin-bottom: 6vh;
+    margin-bottom: 7vh;
   }
 }
 
 .advantage {
-  width: calc(50% - 20px);
+  width: calc(50% - 10px);
   max-width: 570px;
   min-height: 299px;
   padding: 40px 35px 70px 46px;
@@ -25,18 +25,22 @@
   transition: .7s;
 
   @include tablets {
-    width: calc(50% - 23px);
-    padding: 25px 19px 32px 25px;
+    width: calc(50% - 32px);
+    padding: 25px 19px 25px 25px;
     min-width: 300px;
     min-height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3.6vh;
   }
 
   @include phones {
     min-width: 100%;
     padding: 3vh 10px 2.5vh 21px;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

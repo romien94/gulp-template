@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 33vh 0 30vh;
+  padding: 33vh 0 29vh;
   background-image: url("./../img/background/hero.png");
   background-color: rgba($color: #1B2D37, $alpha: 1);
   background-position: center center;
@@ -8,11 +8,11 @@
   color: white;
 
   @include tablets {
-    padding: 22vh 90px 19vh;
+    padding: 23vh 58px 20vh;
   }
 
   @include phones {
-    padding: 34vh 15px 8vh;
+    padding: 35.5vh 0 8.5vh;
   }
 }
 
@@ -29,10 +29,10 @@
 }
 
 .hero:before {
-  width: 39%;
+  width: 37%;
   height: 59%;
   background-image: url("./../img/background/plates.png");
-  transform: translate(-19%, -36%);
+  transform: translate(-22%,-35%);
   z-index: 5;
   background-size: contain;
 
@@ -42,24 +42,25 @@
   }
 
   @include phones {
-    width: 100%;
-    transform: translate(10%, -80%);
+    width: 96%;
+    transform: translate(4%,-92%);
+    height: 46%;
   }
 }
 
 .hero:after {
   background-image: url("./../img/background/triangles.png");
-  width: 37%;
+  width: 33%;
   // z-index: 30;
   right: 0;
-  transform: translate(-24%, -38%);
+  transform: translate(-36%,-33%);
 
   @include tablets {
-    width: 64%;
-    transform: translate(31%, -70%);
+    width: 67%;
+    transform: translate(35%,-67%);
   }
 
-  height: 59%;
+  height: 56%;
   background-size: contain;
 
   @include phones {
@@ -72,6 +73,10 @@
   position: relative;
   flex-direction: column;
   justify-content: center;
+  padding: 0 31px;
+  @include phones {
+    padding: 0 14px;
+  }
 }
 
 .hero__container:after {
@@ -90,13 +95,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 50%;
-  padding-left: 90px;
+  width: 70%;
+  max-width: 750px;
+  padding-left: 97px;
+  z-index: 30;
   align-items: flex-start;
 
   @include tablets {
     padding-left: 50px;
-    max-width: 73%;
+    width: 75%;
   }
 
   @include phones {
@@ -112,12 +119,12 @@
   width: 66px;
   height: .2vh;
   background-color: white;
-  transform: translateX(-120%);
+  transform: translateX(-143%);
   top: 1.9vh;
 
   @include tablets {
     width: 33px;
-    transform: translateX(-135%);
+    transform: translateX(-147%);
   }
 
   @include phones {

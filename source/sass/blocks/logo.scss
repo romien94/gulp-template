@@ -7,10 +7,10 @@
   position: relative;
   z-index: 20;
   height: 5.5vh;
-  width: 225px;
+  width: 200px;
 
   @include tablets {
-    height: 6vh;
+    height: 6.5vh;
     width: 205px;
   }
 
@@ -29,6 +29,7 @@
 
 .logo__image--mobile {
   display: none;
+  margin-bottom: 0;
 
   @include phones {
     width: 38px;

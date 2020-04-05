@@ -1,20 +1,27 @@
 .feedback {
   background-color: #00B2FF;
-  padding: 9.5vh 11% 14vh;
+  padding: 9.5vh 11% 12vh;
 
   @include tablets {
-    padding: 9.5vh 12% 12vh;
+    padding: 9.5vh 68px 12.5vh;
   }
 
   @include phones {
-    padding: 3vh 15px 5vh;
+    padding: 4vh 0 6vh;
   }
 }
 
 .feedback__container {
-  max-width: 1170px;
+  max-width: 1240px;
   justify-content: flex-end;
   position: relative;
+  padding: 0 20px;
+  @include tablets {
+    padding: 0px 22px;
+  }
+  @include phones {
+    padding: 0 17px;
+  }
 }
 
 .feedback__container:before {
@@ -27,6 +34,26 @@
   background-image: url("./../img/background/airplane.png");
   background-repeat: no-repeat;
   background-position: center center;
+  transform: translate(4%, -3%);
+  background-size: contain;
+  top: 0;
+  left: 0;
+
+  @include tablets {
+    display: none;
+  }
+}
+.feedback__container:after{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 60%;
+  max-width: 625px;
+  height: 500px;
+  background-image: url("./../img/background/triangles.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translate(-22%,0%);
   background-size: contain;
   top: 0;
   left: 0;
@@ -40,7 +67,10 @@
   margin-bottom: 1vh;
 
   @include tablets {
-    margin-bottom: 2vh;
+    margin-bottom: 2.5vh;
+  }
+  @include phones {
+    margin-bottom: 1.5vh;
   }
 }
 
@@ -48,11 +78,11 @@
   margin-bottom: 5.5vh;
 
   @include tablets {
-    margin-bottom: 6.5vh;
+    margin-bottom: 7vh;
   }
 
   @include phones {
-    margin-bottom: 2.5vh;
+    margin-bottom: 3.5vh;
   }
 }
 

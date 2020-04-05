@@ -4,25 +4,31 @@
   padding: 9.2vh 0 13.4vh;
 
   @include tablets {
-    padding: 6vh 0 3.5vh;
+    padding: 6vh 0 4vh;
   }
 
   @include phones {
-    padding: 5.5vh 0 4.5vh;
+    padding: 6.5vh 0 4.5vh;
   }
 }
 
 .services__section-title {
   margin-bottom: 6vh;
+  @include tablets {
+    width: 85%;
+  }
 
   @include phones {
+    width: 100%;
     margin-bottom: 5vh;
+    margin-left: 10px;
   }
 }
 
 .services__container {
   flex-direction: column;
-  max-width: 1170px;
+  max-width: 1220px;
+  padding: 0 15px 0px 37px;
 
   @include tablets {
     padding: 0 25px;
@@ -131,20 +137,20 @@
 .service__title {
   position: absolute;
   width: 100%;
-  top: 8.5%;
+  top: 8%;
   left: 12%;
-  width: 50%;
+  max-width: 160px;
   z-index: 20;
   font-size: 20px;
   font-family: "Roboto Condensed", sans-serif;
 
   @include tablets {
-    top: 15.5%;
+    top: 16.5%;
     left: 6%;
     width: 25%;
   }
 
-  @include tablets {
+  @include phones {
     top: 9.5%;
     left: 12%;
     width: 65%;

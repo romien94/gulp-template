@@ -2,7 +2,7 @@
   width: 100%;
   position: absolute;
   color: white;
-  top: 4vh;
+  top: 3.5vh;
   z-index: 20;
 
   @include tablets {
@@ -17,7 +17,7 @@
 .header__container {
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 15px 0 35px;
 
   @include tablets {
     padding: 0 25px;
@@ -31,12 +31,13 @@
 .header-contacts {
   display: flex;
   flex: 1;
-  padding: 0px 38px 0 57px;
+  margin-right: 45px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
   @include tablets {
+    margin-right: 0;
     justify-content: flex-end;
     flex: 0;
     padding: 0;
@@ -45,10 +46,13 @@
 }
 
 .header-contacts__item {
-  margin-right: 34px;
+  margin-right: 85px;
 
   &:last-child {
     margin-right: 0;
+  }
+  @include tablets {
+    margin-right: 34px;
   }
 
   @include phones {
@@ -105,16 +109,18 @@
   align-items: center;
   justify-content: space-between;
   min-width: 230px;
+  max-width: 356px;
+  flex: 1;
+  margin-right: 38px;
 
   @include tablets {
+    max-width: 85%;
     width: auto;
-    flex: 1;
-    margin-right: 35px;
   }
 
   @include phones {
     min-width: auto;
-    margin-right: 22px;
+    margin-right: 30px;
   }
 }
 

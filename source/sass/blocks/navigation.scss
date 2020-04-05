@@ -20,7 +20,7 @@
 }
 
 .navigation__item {
-  margin-bottom: .5vh;
+  margin-bottom: 0.5vh;
 
   &:last-child {
     margin-bottom: 0;
@@ -28,19 +28,46 @@
 }
 
 .navigation__title {
+  position: relative;
   text-transform: uppercase;
   font-family: "Roboto Condensed";
-  margin-bottom: 3vh;
+  margin-bottom: 1.5vh;
 
   @include tablets {
     font-size: 15px;
+    margin-bottom: 3.5vh;
   }
 
   @include phones {
-    color: #1B2D37;
+    color: #1b2d37;
     font-weight: normal;
     opacity: 1;
+    cursor: pointer;
   }
+}
+
+.navigation__title:before,
+.navigation__title:after {
+  @include phones {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    right: 0;
+    background-color: #c4c4c4;
+  }
+}
+
+.navigation__title:before {
+  width: 15px;
+  height: 2px;
+  transform: translate(-16%, 50%);
+}
+
+.navigation__title:after {
+  width: 2px;
+  height: 15px;
+  transform: translate(-8px, -5px);
 }
 
 .navigation__column {
@@ -50,7 +77,6 @@
     margin-right: 0;
   }
 }
-
 
 .navigation__link {
   text-decoration: none;

@@ -29,12 +29,14 @@
 }
 
 .contacts__title {
+  position: relative;
   text-transform: uppercase;
   font-family: "Roboto Condensed";
-  margin-bottom: 3vh;
+  margin-bottom: 1.5vh;
 
   @include tablets {
     font-size: inherit;
+    margin-bottom: 3.5vh;
   }
 
   @include phones {
@@ -42,8 +44,22 @@
     font-weight: normal;
     opacity: 1;
     margin-bottom: 4vh;
+    cursor: pointer;
   }
 }
+
+.contacts__title:after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 50%;
+  right: 0;
+  background-color: #C4C4C4;
+  width: 15px;
+  height: 2px;
+  transform: translate(-16%, 50%);
+}
+
 
 .contacts__link {
   text-decoration: none;

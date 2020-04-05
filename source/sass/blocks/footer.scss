@@ -4,7 +4,7 @@
   padding: 7vh 0 1vh;
 
   @include tablets {
-    padding: 2vh 0 1vh;
+    padding: 2.5vh 0 1vh;
     font-size: 13px;
   }
 
@@ -15,9 +15,13 @@
 
 .footer__container {
   flex-direction: column;
+  padding: 0 15px 0 30px;
 
   @include tablets {
     padding: 0 25px;
+  }
+  @include phones {
+    padding: 0 15px;
   }
 }
 
@@ -28,6 +32,7 @@
 
   @include tablets {
     flex-wrap: wrap;
+    margin-bottom: 5vh;
   }
 
   @include phones {
@@ -82,14 +87,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   @include tablets {
     width: 100%;
     flex-direction: row;
     align-items: center;
     padding-bottom: 3vh;
-    margin-bottom: 4vh;
+    margin-bottom: 4.5vh;
+    justify-content: space-between;
   }
 
   @include phones {
@@ -112,10 +117,27 @@
   }
 }
 
+.footer__logo {
+  margin-bottom: 6vh;
+  @include tablets {
+    margin-bottom: 0;
+  }
+  @include phones {
+    margin-bottom: 3.5vh;
+  }
+}
+
+.footer__logo-image {
+  width: 215px;
+  @include phones {
+    margin-bottom: 0;
+  }
+}
+
 .footer__bottom {
   position: relative;
   display: flex;
-  padding: 2.5vh 0 0;
+  padding: 1.5vh 0 0;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -123,7 +145,7 @@
 
   @include tablets {
     justify-content: space-between;
-    padding: 1.8vh 0 0;
+    padding: 2.5vh 0 0;
   }
 
   @include phones {
