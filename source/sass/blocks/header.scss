@@ -74,16 +74,8 @@
 }
 
 .header-contacts__link:hover {
-  animation: fadein 1s infinite;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
+  opacity: .6;
+  transition: .7s;
 }
 
 .header-contacts__link-text {

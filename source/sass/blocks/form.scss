@@ -17,13 +17,14 @@
   margin-bottom: 0;
 }
 
-.form__field {
+.form__block {
   display: flex;
   flex: 1;
   margin-right: 31px;
   font-family: "PT mono", monospace;
   color: white;
   align-items: center;
+  position: relative;
 
   @include phones {
     width: 100%;
@@ -36,19 +37,20 @@
   }
 }
 
-.form__field:last-child {
+
+.form__block:last-child {
   margin-right: 0;
 }
 
-.form__field input,
-.form__field textarea {
+.form__block input,
+.form__block textarea {
   flex: 1;
   background-color: #12bbff;
   padding: 14px 17px;
   color: white;
 }
 
-.form__field input {
+.form__block input {
   width: 50%;
 
   @include phones {
@@ -56,7 +58,7 @@
   }
 }
 
-.form__field textarea {
+.form__block textarea {
   min-height: 154px;
 
   @include phones {
@@ -64,27 +66,27 @@
   }
 }
 
-.form__field input::placeholder,
-.form__field textarea::placeholder {
+.form__block input::placeholder,
+.form__block textarea::placeholder {
   font-family: "PT mono", monospace;
   color: white;
 }
 
-.form__field--checkbox {
+.form__block--checkbox {
   display: flex;
   align-items: center;
   position: relative;
   font-size: 14px;
 }
 
-.form__field-checkbox {
+.form__block-checkbox {
   display: flex;
   align-items: flex-start;
   font-size: 14px;
   line-height: 16px;
 }
 
-.form__field-checkbox:before {
+.form__block-checkbox:before {
   content: "";
   display: flex;
   align-items: center;
@@ -95,7 +97,7 @@
   border: 1px solid white;
 }
 
-input[type="checkbox"]:checked~.form__field-checkbox:after {
+input[type="checkbox"]:checked~.form__block-checkbox:after {
   background-image: url("./../img/background/check.png");
   content: '';
   background-repeat: no-repeat;

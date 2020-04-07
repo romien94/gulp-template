@@ -7,7 +7,6 @@
     <title>Стартовый шаблон</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <script defer="" src="node_modules/svgxuse/svgxuse.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -22,8 +21,7 @@
                 <use xlink:href="img/sprite_auto.svg#icon-logo--mobile"></use>
               </svg>
             </a>
-            <button class="burger-menu">
-            </button>
+            <button class="burger-menu"></button>
           </div>
           <div class="header__right">
             <ul class="header__contacts header-contacts">
@@ -59,15 +57,15 @@
                   модулей
                 </p>
               </div>
-              <a class="button consult-button button--blue">
+              <a href="#form" class="button consult-button button--blue">
                 <span class="consult-button__text--desktop">Получить бесплатную консультацию</span>
                 <span class="consult-button__text--mobile">Бесплатная консультация</span>
               </a>
             </div>
-            <a class="scroll-button">Скролл вниз</a>
+            <a href="#about" class="scroll-button">Скролл вниз</a>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="container about__container">
             <ul class="advantages">
               <li class="advantages__item advantage">
@@ -198,7 +196,7 @@
             </ul>
           </div>
         </section>
-        <section class="feedback">
+        <section class="feedback" id="form">
           <div class="container feedback__container">
             <div class="form feedback__form">
               <div class="form__wrapper">
@@ -209,23 +207,23 @@
                   Мы проконсультируем Вас бесплатно
                 </div>
                 <div class="form__row">
-                  <label class="form__field">
-                    <input type="text" name="name" placeholder="Имя">
+                  <label class="form__block">
+                    <input type="text" class="form__field" name="name" placeholder="Имя" required="">
                   </label>
-                  <label class="form__field">
-                    <input type="tel" name="phone" placeholder="Телефон">
+                  <label class="form__block">
+                    <input class="form__field" type="tel" name="phone" id="phone" placeholder="Телефон" required="">
                   </label>
                 </div>
                 <div class="form__row">
-                  <label class="form__field">
-                    <textarea name="commentary" placeholder="Ваш вопрос"></textarea>
+                  <label class="form__block">
+                    <textarea class="form__field" name="commentary" placeholder="Ваш вопрос" required=""></textarea>
                   </label>
                 </div>
                 <div class="form__row">
                   <button class="button submit-button">Задать вопрос</button>
-                  <label class="form__field form__field--checkbox" tabindex="0">
-                    <input class="form__checkbox visually-hidden" type="checkbox" id="personaldata1">
-                    <p class="form__field-checkbox" for="personaldata1">
+                  <label class="form__block form__block--checkbox" tabindex="0">
+                    <input class="form__checkbox visually-hidden form__field" type="checkbox" id="personaldata1" required="">
+                    <p class="form__block-checkbox" for="personaldata1">
                       Я согласен на обработку персональных данных
                     </p>
                   </label>
@@ -240,7 +238,7 @@
           <div class="footer__maincontent">
             <div class="footer__links">
               <a href="#" class="logo footer__logo">
-                <svg class="logo__image footer__logo-image ">
+                <svg class="logo__image footer__logo-image">
                   <use xlink:href="img/sprite_auto.svg#icon-logo--black"></use>
                 </svg>
               </a>
@@ -340,33 +338,146 @@
             Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
           </p>
         </div>
-        <form action="" class="form">
+        <form action="" class="form modal__form">
           <div class="form__row">
-            <div class="form__field">
-              <input type="text" placeholder="Имя">
+            <div class="form__block">
+              <input type="text" class="form__field" placeholder="Имя">
             </div>
           </div>
           <div class="form__row">
-            <label class="form__field">
-              <input type="tel" placeholder="Телефон">
+            <label class="form__block">
+              <input type="tel" class="form__field" placeholder="Телефон">
             </label>
           </div>
           <div class="form__row">
-            <label class="form__field">
-              <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+            <label class="form__block">
+              <textarea class="form__field" name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
             </label>
           </div>
           <div class="form__row">
             <button class="button">Задать вопрос</button>
           </div>
           <div class="form__row">
-            <div class="form__field form__field--checkbox">
-              <input type="checkbox" name="" id="personaldata">
-              <label class="form__field-checkbox" for="personaldata">Я согласен на обработку персональных данных</label>
+            <div class="form__block form__block--checkbox">
+              <input type="checkbox" class="form__field" name="" id="personaldata">
+              <label class="form__block-checkbox" for="personaldata">Я согласен на обработку персональных данных</label>
             </div>
           </div>
         </form>
+        <button class="modal-close">x</button>
       </div>
     </div>
   </body>
+  <script>
+    const body = document.querySelector("body");
+    const callMeButton = document.querySelector(".callme-button");
+    const modalWindow = document.querySelector(".modal");
+    const modalCloseButton = document.querySelector(".modal-close");
+
+    function getBodyScrollTop() {
+      return (
+        self.pageYOffset ||
+        (document.documentElement && document.documentElement.ScrollTop) ||
+        (document.body && document.body.scrollTop)
+      );
+    }
+
+    callMeButton.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      body.dataset.scrollY = getBodyScrollTop();
+      body.style.top = `-${body.dataset.scrollY}px`;
+
+      modalWindow.classList.add("modal--active");
+      body.classList.add("body-lock");
+    });
+
+    modalCloseButton.addEventListener("click", (e) => closeModalWindow());
+
+    function closeModalWindow() {
+      modalWindow.classList.remove("modal--active");
+      body.classList.remove("body-lock");
+    }
+  </script>
+  <script>
+    const consultButton = document.querySelector(".consult-button");
+    const consultButtonHref = consultButton.getAttribute('href');
+    const feedbackSection = document.querySelector('.feedback')
+    const scrollToButton = document.querySelector('.scroll-button');
+    const scrollToButtonHref = scrollToButton.getAttribute('href');
+    const aboutSection = document.querySelector('.about')
+
+    consultButton.addEventListener('click', e => {
+      feedbackSection.scrollIntoView({behavior:'smooth'})
+    });
+
+    scrollToButton.addEventListener('click', e => {
+      aboutSection.scrollIntoView({behavior:'smooth'})
+    })
+  </script>
+
+  <script>
+    const phoneInput = document.querySelector("#phone");
+    const phoneLength = phoneInput.value.length;
+
+    phoneInput.addEventListener('focus', e => {
+      phoneInput.value.startsWith('+7')? '' : phoneInput.value = '+7';
+    })
+
+    phoneInput.addEventListener('keydown', e => {
+      (Number(e.key) || e.key === '0' || e.key === 'Backspace' && checkPhoneLength())? '': e.preventDefault();
+    });
+
+    phoneInput.addEventListener('blur', e => {
+      e.preventDefault();
+      (phoneInput.value.length != 12)? phoneInput.value = '' : '';
+    })
+
+  </script>
+
+  <script>
+const form = document.querySelector('.feedback__form'),
+      sendButton = form.querySelector('.submit-button'),
+      formFields = Array.from(form.querySelectorAll('.form__field'));
+      
+sendButton.addEventListener('click', e => {
+  e.preventDefault();
+  validateForm(form);
+
+  if (validateForm(form)) {
+    console.log('okay')
+  } else {
+    console.log('not okay')
+  }
+})
+
+function validateForm(form) {
+  let valid = true;
+  for (let field of formFields) {
+    checkField(field);
+    if (!checkField(field)) valid = false;
+  }
+  return valid;
+}
+
+function checkField(field) {
+  if (field.checkValidity()) {
+    (field.previousElementSibling)?field.parentNode.removeChild(field.previousElementSibling):'';
+    return true;
+  }
+  else {
+    (!field.previousElementSibling)?createError(field):'';
+    field.previousElementSibling.textContent = field.validationMessage;
+    return false;
+  }
+}
+
+function createError(field) {
+  const error = document.createElement('div');
+  // field.parentNode.appendChild(error);
+  field.parentNode.insertBefore(error, field)
+  error.classList.add('error');
+}
+
+  </script>
 </html>

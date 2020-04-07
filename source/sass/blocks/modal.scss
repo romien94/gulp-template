@@ -1,4 +1,9 @@
+.modal {
+  display: none;
+}
+
 .modal--active {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,10 +15,6 @@
   align-items: center;
 }
 
-.modal {
-  display: none;
-}
-
 .modal__wrapper {
   position: relative;
   max-width: 470px;
@@ -23,9 +24,8 @@
   color: white;
 }
 
-.modal__wrapper:after {
+.modal-close {
   display: block;
-  content: "x";
   position: absolute;
   top: 0;
   right: 0;

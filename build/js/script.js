@@ -1,5 +1,5 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
+var pageHeader = document.querySelector('.header');
 var headerToggle = document.querySelector('.page-header__toggle');
 
 pageHeader.classList.remove('page-header--nojs');
