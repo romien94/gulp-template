@@ -3,7 +3,7 @@ const form = document.querySelector('.feedback__form'),
 
 sendButton.addEventListener('click', e => {
     
-    if (validateForm) {
+    if (validateForm(form)) {
         const formFields = form.querySelectorAll('.form__field');
         for (let i = 0; i < formFields.length; i++) {
             let fieldName = formFields[i].getAttribute("name");
@@ -21,8 +21,8 @@ function validateForm(form) {
     const formFields = Array.from(form.querySelectorAll('.form__field'));
     formFields.forEach(field => {
         if (!validateField(field)) valid = false;
-        return valid;
     })
+    return valid;
 }
 
 function validateField(field) {
