@@ -1,4 +1,5 @@
 const navigationTitle = document.querySelector('.navigation__title');
+const navigationTitleAfter = navigationTitle.querySelector(':after');
 const navigationBlock = document.querySelector('.navigation');
 const contactsTitle = document.querySelector('.contacts__title');
 const contactsBlock = document.querySelector('.contacts');

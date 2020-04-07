@@ -6,7 +6,7 @@
 
 .contacts--active {
   .contacts__wrapper {
-    // max-height: auto;
+    max-height: 100%;
     height: auto;
     margin-bottom: 3vh;
     transition: .7s;
@@ -20,8 +20,7 @@
   }
 
   @include phones {
-    // max-height: 0;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
   }
 }
@@ -51,6 +50,21 @@
   }
 }
 
+.contacts__title:before {
+  display: none;
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 0;
+  background-color: #C4C4C4;
+  width: 2px;
+  height: 15px;
+  transform: translate(-8px, -5px);
+  @include phones {
+    display: block;
+  }
+}
+
 .contacts__title:after {
   display: none;
   position: absolute;
@@ -65,6 +79,11 @@
     display: block;
   }
 }
+
+.contacts--active .contacts__title:before {
+  display: none;
+}
+
 
 
 .contacts__link {

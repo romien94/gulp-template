@@ -2,6 +2,8 @@
   .navigation__list {
     height: auto;
     margin-bottom: 3vh;
+    max-height: 100%;
+    transition: max-height .7s;
   }
 }
 
@@ -14,7 +16,7 @@
   }
 
   @include phones {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
   }
 }
@@ -68,6 +70,10 @@
   width: 2px;
   height: 15px;
   transform: translate(-8px, -5px);
+}
+
+.navigation--active .navigation__title:after {
+  display: none;
 }
 
 .navigation__column {
