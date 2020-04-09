@@ -50,6 +50,9 @@
   font-size: 14px;
   letter-spacing: 0.04em;
   line-height: 16px;
+  @include phones {
+    padding: 13px 51px;
+  }
 }
 
 .button--border_blue:hover {
@@ -86,7 +89,8 @@
 
   @include phones {
     margin-right: 0;
-    margin-bottom: 3vh;
+    margin-bottom: 4vh;
+    padding: 13px 10px;
   }
 }
 

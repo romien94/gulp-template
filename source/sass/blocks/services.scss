@@ -20,7 +20,7 @@
 
   @include phones {
     width: 100%;
-    margin-bottom: 5vh;
+    margin-bottom: 5.5vh;
     margin-left: 10px;
   }
 }
@@ -35,7 +35,7 @@
   }
 
   @include phones {
-    padding: 0 10px 0 15px;
+    padding: 0 15px 0 15px;
   }
 }
 
@@ -51,9 +51,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-basis: 370px;
-  height: auto;
-  max-height: 620px;
+  flex: 1;
+  max-width: 370px;
+  min-height: 620px;
   margin-right: 30px;
 
   &:last-child {
@@ -61,11 +61,11 @@
   }
 
   @include tablets {
+    flex: 0;
     margin-right: 0;
     max-width: 100%;
-    height: 256px;
-    flex-basis: auto;
     margin-bottom: 46px;
+    min-height: 256px;
   }
 
   @include phones {
@@ -78,39 +78,36 @@
   flex: 1;
   width: 100%;
   height: 100%;
-}
-
-.service__image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  opacity: .5;
-
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+  padding: 5vh 4.4vh;
   @include tablets {
-    display: none;
+    padding: 5.4vh;
   }
-
   @include phones {
-    display: block;
+    padding: 3.2vh 4.4vh;
   }
 }
-
-.service__image--tablets {
-  display: none;
-
-  @include tablets {
-    display: block;
-  }
-
-  @include phones {
-    display: none;
-  }
-}
-
 
 .service__link:before {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color:rgba(#1B2D37,  0.7);
+  top: 0;
+  left: 0;
+}
+
+.service__link:hover:before {
+  transition: .7s;
+  background-color:rgba(#1B2D37,  0.5);
+}
+
+.service__link:after {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,32 +124,40 @@
   background-position: center center;
 }
 
-.service__link:hover{
-  .service__image {
-    opacity: .1;
-    transition: .7s;
+.service__link:hover:after {
+  background-color: rgba(#00B2FF, 0.7);
+  transition: .7s;
+}
+
+
+.service__link--production{
+  background-image: url("../img/background/service-1.png");
+  @include tablets {
+    background-image: url("../img/background/service-1--tablets.png");
+  }
+}
+
+.service__link--mounting {
+  background-image: url("../img/background/service-2.png");
+  @include tablets {
+    background-image: url("../img/background/service-2--tablets.png");
+  }
+}
+
+.service__link--components {
+  background-image: url("../img/background/service-3.png");
+  @include tablets {
+    background-image: url("../img/background/service-3--tablets.png");
   }
 }
 
 .service__title {
-  position: absolute;
   width: 100%;
-  top: 8%;
-  left: 12%;
   max-width: 160px;
   z-index: 20;
   font-size: 20px;
   font-family: "Roboto Condensed", sans-serif;
-
-  @include tablets {
-    top: 16.5%;
-    left: 6%;
-    width: 25%;
-  }
-
-  @include phones {
-    top: 9.5%;
-    left: 12%;
-    width: 65%;
-  }
+  color: white;
+  position: relative;
+  z-index: 30;
 }

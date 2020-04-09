@@ -9,7 +9,7 @@
 
   @include phones {
     flex-direction: column;
-    margin-bottom: 4vh;
+    margin-bottom: 4.2vh;
   }
 }
 
@@ -29,7 +29,7 @@
   @include phones {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 4.5vh;
 
     &:last-child {
       margin-bottom: 0;
@@ -84,6 +84,11 @@
   align-items: flex-start;
   font-size: 14px;
   line-height: 16px;
+}
+
+.form__block-checkbox:hover {
+  opacity: .7;
+  transition: .7s;
 }
 
 .form__block-checkbox:before {

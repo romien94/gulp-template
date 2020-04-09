@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -194,57 +194,21 @@
             </h2>
             <ul class="services__list">
               <li class="services__item service">
-                <a href="#" class="service__link">
-                  <img
-                    src="./img/background/service-1.png"
-                    alt=""
-                    alt=""
-                    class="service__image"
-                  />
-                  <img
-                    src="./img/background/service-1--tablets.png"
-                    alt=""
-                    alt=""
-                    class="service__image service__image--tablets"
-                  />
+                <a href="#" class="service__link service__link--production">
                   <div class="service__title">
                     <p>Производство печатных плат</p>
                   </div>
                 </a>
               </li>
               <li class="services__item service">
-                <a href="#" class="service__link">
-                  <img
-                    src="./img/background/service-2.png"
-                    alt=""
-                    alt=""
-                    class="service__image"
-                  />
-                  <img
-                    src="./img/background/service-2--tablets.png"
-                    alt=""
-                    alt=""
-                    class="service__image service__image--tablets"
-                  />
+                <a href="#" class="service__link service__link--mounting">
                   <div class="service__title">
                     <p>Монтаж печатных плат</p>
                   </div>
                 </a>
               </li>
               <li class="services__item service">
-                <a href="#" class="service__link">
-                  <img
-                    src="./img/background/service-3.png"
-                    alt=""
-                    alt=""
-                    class="service__image"
-                  />
-                  <img
-                    src="./img/background/service-3--tablets.png"
-                    alt=""
-                    alt=""
-                    class="service__image service__image--tablets"
-                  />
+                <a href="#" class="service__link service__link--components">
                   <div class="service__title">
                     <p>Комплектующие для светотехники</p>
                   </div>
@@ -283,6 +247,7 @@
                     <textarea
                       class="form__field"
                       name="commentary"
+                      id="commentary"
                       placeholder="Ваш вопрос"
                       required
                     ></textarea>
@@ -294,12 +259,11 @@
                     <input
                       class="form__checkbox visually-hidden form__field"
                       type="checkbox"
-                      id="personaldata1"
                       required
                     />
-                    <p class="form__block-checkbox" for="personaldata1">
+                    <span class="form__block-checkbox">
                       Я согласен на обработку персональных данных
-                    </p>
+                    </span>
                   </label>
                 </div>
               </div>
@@ -323,7 +287,7 @@
                 <ul class="socials__list">
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <svg class="socials__image">
+                      <svg class="socials__image socials__image--fb">
                         <use
                           xlink:href="img/sprite_auto.svg#icon-facebook"
                         ></use>
@@ -332,7 +296,7 @@
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <svg class="socials__image">
+                      <svg class="socials__image socials__image--ok">
                         <use
                           xlink:href="img/sprite_auto.svg#icon-odnoklassniki"
                         ></use>
@@ -341,7 +305,7 @@
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <svg class="socials__image">
+                      <svg class="socials__image socials__image--vk">
                         <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
                       </svg>
                     </a>
@@ -352,7 +316,7 @@
             <nav class="navigation footer__navigation">
               <h3 class="navigation__title">Разделы сайта</h3>
               <ul class="navigation__list">
-                <div class="navigation__column">
+
                   <li class="navigation__item">
                     <a href="#" class="navigation__link">О компании</a>
                   </li>
@@ -369,8 +333,6 @@
                       >Монтаж печатных плит</a
                     >
                   </li>
-                </div>
-                <div class="navigation__column">
                   <li class="navigation__item">
                     <a href="#" class="navigation__link">Комплектующие</a>
                   </li>
@@ -380,7 +342,6 @@
                   <li class="navigation__item">
                     <a href="#" class="navigation__link">Контакты</a>
                   </li>
-                </div>
               </ul>
             </nav>
             <div class="contacts footer__contacts">
@@ -444,7 +405,7 @@
               <textarea
                 class="form__field"
                 name=""
-                id=""
+                id="commentary"
                 cols="30"
                 rows="10"
                 placeholder="Ваш вопрос"

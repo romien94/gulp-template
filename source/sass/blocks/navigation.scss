@@ -9,11 +9,15 @@
 
 .navigation__list {
   display: flex;
+  flex-direction: column;
   width: 100%;
   font-family: $ptmono;
+  flex-wrap: wrap;
+  max-height: 120px;
 
   @include tablets {
-    flex-direction: column;
+    max-width: auto;
+    flex-wrap: nowrap;
   }
 
   @include phones {
@@ -24,6 +28,11 @@
 
 .navigation__item {
   margin-bottom: 0.5vh;
+  margin-right: 70px;
+
+  @include tablets {
+    margin-right: 0;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -77,15 +86,12 @@
   display: none;
 }
 
-.navigation__column {
-  margin-right: 70px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
 
 .navigation__link {
   text-decoration: none;
   font-size: 15px;
+}
+
+.navigation__link:hover {
+  color: #00b2ff;
 }
