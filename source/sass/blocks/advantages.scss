@@ -66,6 +66,7 @@
   width: 35px;
   height: 35px;
   margin-bottom: 1.5vh;
+  fill: #00B2FF;
 
   @include tablets {
     margin-bottom: 0;
@@ -104,5 +105,8 @@
 .advantage:hover {
   .advantage__desc {
     color: white;
+  }
+  .advantage__icon {
+    fill: white;
   }
 }

@@ -10,6 +10,7 @@
 .navigation__list {
   display: flex;
   width: 100%;
+  font-family: $ptmono;
 
   @include tablets {
     flex-direction: column;
@@ -32,7 +33,7 @@
 .navigation__title {
   position: relative;
   text-transform: uppercase;
-  font-family: "Roboto Condensed";
+  font-family: $roboto;
   margin-bottom: 1.5vh;
 
   @include tablets {

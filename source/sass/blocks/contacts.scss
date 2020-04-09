@@ -14,10 +14,8 @@
 }
 
 .contacts__wrapper {
-  @include tablets {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
 
   @include phones {
     max-height: 0;
@@ -33,7 +31,7 @@
 .contacts__title {
   position: relative;
   text-transform: uppercase;
-  font-family: "Roboto Condensed";
+  font-family: $roboto;
   margin-bottom: 1.5vh;
 
   @include tablets {

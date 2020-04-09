@@ -1,24 +1,27 @@
-const form = document.querySelector('.feedback__form'),
-    sendButton = form.querySelector('.submit-button');
+const forms = document.querySelectorAll('.form');
 
-sendButton.addEventListener('click', e => {
-    
-    if (validateForm(form)) {
-        const formFields = form.querySelectorAll('.form__field');
-        for (let i = 0; i < formFields.length; i++) {
-            let fieldName = formFields[i].getAttribute("name");
-            let fieldValue = formFields[i].value;
-            localStorage.setItem(fieldName, fieldValue);
-            clearField(formFields[i]);
+forms.forEach((form, index) => {
+    const submitButton = form.querySelector('.submit-button');
+
+    submitButton.addEventListener('click', e => {
+        e.preventDefault();
+        if (validateForm(form)) {
+            const formFields = form.querySelectorAll('.form__field');
+            formFields.forEach(field => {
+                const fieldName = field.getAttribute("name"),
+                    fieldValue = field.value;
+                    localStorage.setItem(fieldName, fieldValue);
+                    field.value = '';
+            })
+            showMessage(form);
         }
-        showMessage(form);
-    }
+    })
+})
 
-});
 
 function validateForm(form) {
     let valid = true;
-    const formFields = Array.from(form.querySelectorAll('.form__field'));
+    const formFields = form.querySelectorAll('.form__field');
     formFields.forEach(field => {
         if (!validateField(field)) valid = false;
     })
@@ -26,6 +29,7 @@ function validateForm(form) {
 }
 
 function validateField(field) {
+    checkRequiredAttribute(field);
     if (field.checkValidity()) {
         (field.previousElementSibling)? field.parentNode.removeChild(field.previousElementSibling) : '';
         return true;
@@ -49,9 +53,14 @@ function clearField(field) {
 function showMessage(form) {
     let message = document.createElement('div');
     message.textContent = 'Ваша заявка была принята. Мы перезвоним Вам позднее';
+    message.style.color = 'black';
     form.appendChild(message);
 
     setTimeout(() => {
         form.removeChild(message);        
     }, 3000);
+}
+
+function checkRequiredAttribute(field) {
+    return (field.hasAttribute("required"))? true : field.setAttribute("required", "");
 }

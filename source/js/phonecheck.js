@@ -1,5 +1,22 @@
-const phoneInput = document.querySelector("#phone");
-const phoneLength = phone.length;
+const phoneInputs = document.querySelectorAll("input[type='tel']");
+
+phoneInputs.forEach(phoneInput => {
+    phoneInput.addEventListener('focus', e => {
+        checkCountryCode(phoneInput);
+    });
+    
+    
+    phoneInput.addEventListener('keydown', e => {
+        (checkFieldLength(phoneInput) && Number(e.key) || checkIfButtonIsAllowed(e))? '' : e.preventDefault();
+    })
+    
+    phoneInput.addEventListener('blur', e => {
+        let phoneValue = phoneInput.value;
+        (phoneValue.startsWith('+7') && checkField(phoneValue))? '': phoneInput.value = '';
+    })
+})
+
+
 
 function checkCountryCode(field) {
     let fieldValue = field.value;
@@ -15,16 +32,10 @@ function checkFieldLength(field) {
     return (fieldLength < 12)? true : false;
 }
 
-phoneInput.addEventListener('focus', e => {
-    checkCountryCode(phoneInput);
-});
+function checkIfButtonIsAllowed(event) {
+    let pressedButton = event.key;
+    let ctrlVCombination = event.ctrlKey && event.key === 'v';
 
-
-phoneInput.addEventListener('keydown', e => {
-    (checkFieldLength(phoneInput) && Number(e.key) || e.key === 'Backspace')? '' : e.preventDefault();
-})
-
-phoneInput.addEventListener('blur', e => {
-    let phoneValue = phoneInput.value;
-    (phone.value.startsWith('+7') && checkField(phoneValue))? '': phoneInput.value = '';
-})
+    if (pressedButton === 'Backspace' || pressedButton === 'Tab' || ctrlVCombination) return true;
+    else return false;
+}
