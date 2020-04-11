@@ -1,13 +1,13 @@
 .feedback {
   background-color: #00B2FF;
-  padding: 9.5vh 11% 12vh;
+  padding: 91px 0 114px;
 
   @include tablets {
-    padding: 9.5vh 68px 12.5vh;
+    padding: 77px 0 100px;
   }
 
   @include phones {
-    padding: 3.4vh 0 5.5vh;
+    padding: 27px 0 44px;
   }
 }
 
@@ -15,9 +15,9 @@
   max-width: 1240px;
   justify-content: flex-end;
   position: relative;
-  padding: 0 20px;
+  padding: 0px 27px;
   @include tablets {
-    padding: 0px 22px;
+    padding: 0 11% 0 12%;
   }
   @include phones {
     padding: 0 17px;
@@ -64,25 +64,25 @@
 }
 
 .feedback__section-title {
-  margin-bottom: 1vh;
+  margin-bottom: 9px;
 
   @include tablets {
-    margin-bottom: 2.5vh;
+    margin-bottom: 20px;
   }
   @include phones {
-    margin-bottom: 1.7vh;
+    margin-bottom: 15px;
   }
 }
 
 .feedback__section-desc {
-  margin-bottom: 5.5vh;
+  margin-bottom: 52px;
 
   @include tablets {
-    margin-bottom: 7vh;
+    margin-bottom: 51px;
   }
 
   @include phones {
-    margin-bottom: 3.5vh;
+    margin-bottom: 25px;
   }
 }
 

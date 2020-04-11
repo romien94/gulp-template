@@ -5,17 +5,18 @@
   font-weight: bold;
   letter-spacing: 0.07em;
   max-width: 60%;
-  margin-bottom: 1.9vh;
+  margin-bottom: 20px;
   z-index: 30;
 
   @include tablets {
     font-size: 60px;
     line-height: 70px;
-    margin-bottom: 4vh;
+    margin-bottom: 32px;
   }
 
   @include phones {
     font-size: 40px;
     line-height: 47px;
+    margin-bottom: 30px;
   }
 }

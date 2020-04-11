@@ -1,21 +1,21 @@
 .footer {
   font-family: $ptmono;
   color: #1B2D37;
-  padding: 7vh 0 1vh;
+  padding: 65px 0 10px;
 
   @include tablets {
-    padding: 2.5vh 0 1vh;
+    padding: 21px 0 10px;
     font-size: 13px;
   }
 
   @include phones {
-    padding: 7vh 0 0vh;
+    padding: 40px 0 0;
   }
 }
 
 .footer__container {
   flex-direction: column;
-  padding: 0 15px 0 30px;
+  padding: 0 9px 0 30px;
 
   @include tablets {
     padding: 0 25px;
@@ -28,11 +28,11 @@
 .footer__maincontent {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 6vh;
+  margin-bottom: 55px;
 
   @include tablets {
     flex-wrap: wrap;
-    margin-bottom: 5vh;
+    margin-bottom: 36px;
   }
 
   @include phones {
@@ -57,6 +57,7 @@
 
 .footer__navigation {
   width: 32%;
+  max-width: 445px;
 
   @include tablets {
     width: 50%;
@@ -65,7 +66,7 @@
   @include phones {
     width: 100%;
     position: relative;
-    margin-bottom: 3vh;
+    margin-bottom: 24px;
   }
 }
 
@@ -92,15 +93,14 @@
     width: 100%;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 3vh;
-    margin-bottom: 4.5vh;
-    justify-content: space-between;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   @include phones {
     flex-direction: column;
-    padding-bottom: 7.5vh;
-    margin-bottom: 3vh;
+    padding-bottom: 60px;
+    margin-bottom: 24px;
   }
 }
 
@@ -118,12 +118,14 @@
 }
 
 .footer__logo {
-  margin-bottom: 6vh;
+  margin-bottom: 53px;
   @include tablets {
     margin-bottom: 0;
+    margin-right: 12%;
   }
   @include phones {
-    margin-bottom: 3.5vh;
+    margin-bottom: 29px;
+    margin-right: 0;
   }
 }
 
@@ -145,7 +147,7 @@
 
   @include tablets {
     justify-content: space-between;
-    padding: 2.5vh 0 0;
+    padding: 20px 0 0;
   }
 
   @include phones {
@@ -186,5 +188,14 @@
 
   @include phones {
     margin-bottom: 3vh;
+  }
+}
+
+.footer__socials {
+  @include tablets {
+    margin-left: auto;
+  }
+  @include phones {
+    margin-right: auto;
   }
 }

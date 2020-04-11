@@ -3,19 +3,19 @@
   font-family: "PT mono", monospace;
   font-size: 22px;
   display: flex;
-  margin-bottom: 5vh;
+  margin-bottom: 44px;
   line-height: 34px;
 
   @include tablets {
     font-size: 18px;
     line-height: 156.8%;
-    margin-bottom: 7vh;
+    margin-bottom: 53px;
   }
 
   @include phones {
     font-size: 16px;
     padding-left: 48px;
-    margin-bottom: 5vh;
+    margin-bottom: 40px;
   }
 }
 
@@ -31,5 +31,7 @@
 
   @include phones {
     display: block;
+    top: 12px;
+    left: 1px;
   }
 }

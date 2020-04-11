@@ -1,15 +1,15 @@
 .form__row {
   display: flex;
-  margin-bottom: 4.7vh;
+  margin-bottom: 44px;
   align-items: center;
 
   @include tablets {
-    margin-bottom: 6vh;
+    margin-bottom: 42px;
   }
 
   @include phones {
     flex-direction: column;
-    margin-bottom: 4.2vh;
+    margin-bottom: 33px;
   }
 }
 
@@ -29,7 +29,7 @@
   @include phones {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 4.5vh;
+    margin-bottom: 33px;
 
     &:last-child {
       margin-bottom: 0;
@@ -48,6 +48,9 @@
   background-color: #12bbff;
   padding: 14px 17px;
   color: white;
+  @include tablets {
+    padding: 16px 17px;
+  }
 }
 
 .form__block input {
@@ -60,6 +63,10 @@
 
 .form__block textarea {
   min-height: 154px;
+  
+  @include tablets {
+    min-height: 163px;
+  }
 
   @include phones {
     min-height: 102px;

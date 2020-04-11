@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 33vh 0 29vh;
+  padding: 303px 0 275px;
   background-image: url("./../img/background/hero.png");
   background-color: rgba($color: #1B2D37, $alpha: 1);
   background-position: center center;
@@ -8,11 +8,11 @@
   color: white;
 
   @include tablets {
-    padding: 23vh 58px 20vh;
+    padding: 186px 58px 163px;
   }
 
   @include phones {
-    padding: 35.5vh 0 8.5vh;
+    padding: 285px 0 69px;
   }
 }
 
@@ -73,9 +73,9 @@
   position: relative;
   flex-direction: column;
   justify-content: center;
-  padding: 0 31px;
+  padding: 0 30px;
   @include phones {
-    padding: 0 14px;
+    padding: 0 17px;
   }
 }
 
@@ -117,10 +117,10 @@
   display: block;
   content: "";
   width: 66px;
-  height: .2vh;
+  height: 1.5px;
   background-color: white;
   transform: translateX(-143%);
-  top: 1.9vh;
+  top: 15px;
 
   @include tablets {
     width: 33px;

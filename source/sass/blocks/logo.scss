@@ -10,14 +10,14 @@
   width: 200px;
 
   @include tablets {
-    height: 6.5vh;
+    height: 52px;
     width: 205px;
   }
 
   @include phones {
-    height: 7vh;
+    height: 56px;
     width: 220px;
-    margin-bottom: 2.4vh;
+    margin-bottom: 19px;
   }
 }
 

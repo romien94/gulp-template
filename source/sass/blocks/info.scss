@@ -2,10 +2,11 @@
   font-family: "PT mono", monospace;
   position: relative;
   color: #666666;
-  padding-left: 183px;
+  padding-left: 178px;
+  padding-right: 10px;
 
   @include tablets {
-    padding-left: 205px;
+    padding-left: 203px;
     padding-right: 15px;
   }
 
@@ -19,8 +20,8 @@
   content: "";
   display: block;
   background-image: url("./../img/background/year.png");
-  width: 125px;
-  min-height: 300px;
+  width: 117px;
+  min-height: 305px;
   background-repeat: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,9 +29,9 @@
   transform: translate(1%,4%);
 
   @include tablets {
-    min-height: 360px;
-    width: 160px;
-    transform: translate(13%, 1%);
+    min-height: 348px;
+    width: 137px;
+    transform: translate(13%, 2%);
   }
 
   @include phones {
@@ -39,28 +40,28 @@
 }
 
 .info__section-title {
-  margin-bottom: 2.5vh;
+  margin-bottom: 23px;
 
   @include tablets {
-    margin-bottom: 3.5vh;
+    margin-bottom: 28px;
   }
 
   @include phones {
-    margin-bottom: 3vh;
+    margin-bottom: 20px;
   }
 }
 
 .info__desc {
-  margin-bottom: 5.4vh;
+  margin-bottom: 51px;
   font-family: $ptmono;
 
   @include tablets {
     display: none;
-    margin-bottom: 6.6vh;
+    margin-bottom: 53px;
   }
 
   @include phones {
-    margin-bottom: 5vh;
+    margin-bottom: 41px;
   }
 }
 
@@ -73,14 +74,10 @@
 }
 
 .info__desc p {
-  margin-bottom: 2vh;
-
-  @include tablets {
-    margin-bottom: 2.5vh;
-  }
+  margin-bottom: 19px;
 
   @include phones {
-    margin-bottom: 5vh;
+    margin-bottom: 40px;
   }
 
   &:last-child {

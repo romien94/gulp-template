@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 9vh;
+  margin-bottom: 76px;
 
   @include tablets {
-    margin-bottom: 4vh;
+    margin-bottom: 25px;
   }
 
   @include phones {
-    margin-bottom: 7vh;
+    margin-bottom: 55px;
   }
 }
 
@@ -17,27 +17,28 @@
   width: calc(50% - 10px);
   max-width: 570px;
   min-height: 299px;
-  padding: 40px 35px 70px 37px;
+  padding: 40px 40px 58px 40px;
   border: 1px solid #EBEBEB;
   border-left: 3px solid #00B2FF;
-  margin-bottom: 2.3vh;
+  margin-bottom: 29px;
   cursor: pointer;
   transition: .7s;
 
   @include tablets {
     width: calc(50% - 32px);
-    padding: 25px 19px 25px 25px;
+    padding: 25px 19px 20px 25px;
     min-width: 300px;
-    min-height: auto;
+    min-height: 232px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3.6vh;
+    margin-bottom: 28px;
   }
 
   @include phones {
     min-width: 100%;
-    padding: 3vh 10px 2.5vh 21px;
-    margin-bottom: 3vh;
+    padding: 21px 10px 29px 21px;
+    margin-bottom: 18px;
+    min-height: auto;
     &:last-child {
       margin-bottom: 0;
     }
@@ -65,26 +66,31 @@
 .advantage__icon {
   width: 35px;
   height: 35px;
-  margin-bottom: 1.5vh;
-  fill: #00B2FF;
-
+  margin-bottom: 17px;
   @include tablets {
-    margin-bottom: 0;
+    width: 30px;
+    margin-bottom: 5px;
   }
-
   @include phones {
-    margin-bottom: 1vh;
+    margin-bottom: 12px;
   }
+}
+
+.advantage__icon-pic {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  fill: #00B2FF;
 }
 
 .advantage__title {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 24px;
   color: #00B2FF;
-  margin-bottom: 2vh;
+  margin-bottom: 19px;
 
   @include tablets {
-    margin-bottom: 1.1vh;
+    margin-bottom: 10px;
   }
 
   @include phones {
