@@ -33,7 +33,7 @@
 }
 
 .button:hover {
-  background-color: rgba($color: white, $alpha: .8);
+  background-color: white;
   color: #00b2ff;
   border-color: #00b2ff;
   transition: .7s;
@@ -57,17 +57,10 @@
   transition: .7s;
 }
 
-.consult-button__text--desktop {
-  @include phones {
-    display: none;
-  }
-}
-
-.consult-button__text--mobile {
+.consult-button--mobile {
   display: none;
-
   @include phones {
-    display: inline-block;
+    display: block;
   }
 }
 

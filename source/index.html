@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Roman Uskov"></meta>
+    <meta name="description" content="Добро пожаловать на наш сайт! Мы занимаемся производством и продажей печатных плат"></meta>
+    <meta name="keywords" content="печатные платы, производство печатных плат, монтаж печатных плат"></meta>
     <title>Стартовый шаблон</title>
     <link
       rel="stylesheet"
@@ -16,7 +19,8 @@
       <header class="header">
         <div class="container header__container">
           <div class="header__left">
-            <a class="logo">
+            <a class="logo" title="Логотип нашей компании">
+              <span class="logo__text visually-hidden">Smart Device</span>
               <svg class="logo__image logo__image--hidden">
                 <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
               </svg>
@@ -24,12 +28,12 @@
                 <use xlink:href="img/sprite_auto.svg#icon-logo--mobile"></use>
               </svg>
             </a>
-            <button class="burger-menu"></button>
+            <button type="button" class="burger-menu" aria-label="Открыть меню"></button>
           </div>
           <div class="header__right">
             <ul class="header__contacts header-contacts">
               <li class="header-contacts__item">
-                <a href="mailto:info@sd.ru" class="header-contacts__link">
+                <a href="mailto:info@sd.ru" class="header-contacts__link" title="Наш электронный адрес">
                   <svg class="header-contacts__image">
                     <use
                       class="header-contacts__image-pic"
@@ -40,7 +44,7 @@
                 </a>
               </li>
               <li class="header-contacts__item">
-                <a href="tel:+74950005252" class="header-contacts__link">
+                <a href="tel:+74950005252" class="header-contacts__link" title="Наш контактный телефон">
                   <svg class="header-contacts__image">
                     <use
                       class="header-contacts__image-pic"
@@ -53,7 +57,7 @@
                 </a>
               </li>
             </ul>
-            <a href="#" class="button callme-button">Заказать звонок</a>
+            <a href="#" class="button callme-button" title="Нажмите, чтобы мы перезвонили Вам">Заказать звонок</a>
           </div>
         </div>
       </header>
@@ -68,16 +72,10 @@
                   модулей
                 </p>
               </div>
-              <a href="#form" class="button consult-button button--blue">
-                <span class="consult-button__text--desktop"
-                  >Получить бесплатную консультацию</span
-                >
-                <span class="consult-button__text--mobile"
-                  >Бесплатная консультация</span
-                >
-              </a>
+              <a href="#form" class="button consult-button button--blue" title="Нажмите, чтобы мы перезвонили Вам">Получить бесплатную консультацию</a>
+              <a href="#form" class="button consult-button--mobile button--blue" title="Нажмите, чтобы мы перезвонили Вам">Бесплатная консультация</a>
             </div>
-            <a href="#about" class="scroll-button">Скролл вниз</a>
+            <a href="#about" class="scroll-button" title="Нажмите, чтобы перейти к следующей секции">Скролл вниз</a>
           </div>
         </section>
         <section class="about" id="about">
@@ -191,7 +189,7 @@
                   Российских Железных Дорог..
                 </p>
               </div>
-              <a href="#" class="button button--border_blue">Подробнее</a>
+              <a href="#" class="button button--border_blue" title="Перейти к полному описанию компании">Подробнее</a>
             </div>
           </div>
         </section>
@@ -237,9 +235,11 @@
                 </div>
                 <div class="form__row">
                   <label class="form__block">
-                    <input type="text" class="form__field" name="name" placeholder="Имя" required/>
+                    <span class="form__fieldname visually-hidden">Имя</span>
+                    <input type="text" class="form__field" id="name" name="name" placeholder="Имя" required/>
                   </label>
                   <label class="form__block">
+                    <span class="form__fieldname visually-hidden">Телефон</span>
                     <input
                       class="form__field"
                       type="tel"
@@ -252,6 +252,7 @@
                 </div>
                 <div class="form__row">
                   <label class="form__block">
+                    <span class="form__fieldname visually-hidden">Комментарий</span>
                     <textarea
                       class="form__field"
                       name="commentary"
@@ -262,12 +263,13 @@
                   </label>
                 </div>
                 <div class="form__row">
-                  <button type="submit" class="button submit-button">Задать вопрос</button>
+                  <button type="submit" class="button submit-button" aria-label="Отправить форму">Задать вопрос</button>
                   <label class="form__block form__block--checkbox" tabindex="0">
                     <input
                       class="form__checkbox visually-hidden form__field"
                       type="checkbox"
                       required
+                      id="checkbox"
                     />
                     <span class="form__block-checkbox">
                       Я согласен на обработку персональных данных
@@ -283,7 +285,8 @@
         <div class="container footer__container">
           <div class="footer__maincontent">
             <div class="footer__links">
-              <a href="#" class="logo footer__logo">
+              <a href="#" class="logo footer__logo" title="Логотип нашей компании">
+                <span class="logo__text visually-hidden">Smart Device</span>
                 <svg class="logo__image footer__logo-image">
                   <use xlink:href="img/sprite_auto.svg#icon-logo--black"></use>
                 </svg>
@@ -294,7 +297,8 @@
               <div class="socials footer__socials">
                 <ul class="socials__list">
                   <li class="socials__item">
-                    <a href="#" class="socials__link">
+                    <a href="#" class="socials__link" title="Ссылка на наш профиль в Фэйсбуке">
+                      <span class="socials__link-text visually-hidden">Фэйсбук</span>
                       <svg class="socials__image socials__image--fb">
                         <use
                           xlink:href="img/sprite_auto.svg#icon-facebook"
@@ -303,7 +307,8 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#" class="socials__link">
+                    <a href="#" class="socials__link" title="Ссылка на наш профиль в Одноклассниках">
+                      <span class="socials__link-text visually-hidden">Одноклассники</span>
                       <svg class="socials__image socials__image--ok">
                         <use
                           xlink:href="img/sprite_auto.svg#icon-odnoklassniki"
@@ -312,7 +317,8 @@
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#" class="socials__link">
+                    <a href="#" class="socials__link" title="Ссылка на наш профиль в Вконтакте">
+                      <span class="socials__link-text visually-hidden">Вконтакте</span>
                       <svg class="socials__image socials__image--vk">
                         <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
                       </svg>
@@ -326,29 +332,29 @@
               <ul class="navigation__list">
 
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">О компании</a>
+                    <a href="#" class="navigation__link" title="Ссылка на раздел О компании">О компании</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Продкуты</a>
+                    <a href="#" class="navigation__link" title="Ссылка на раздел Наша продукция">Продкуты</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link"
-                      >Производство печатных плит</a
+                    <a href="#" class="navigation__link" title="Ссылка на раздел Производства печатных плат"
+                      >Производство печатных плат</a
                     >
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link"
-                      >Монтаж печатных плит</a
+                    <a href="#" class="navigation__link" title="Ссылка на раздел Монтаж печатных плат"
+                      >Монтаж печатных плат</a
                     >
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Комплектующие</a>
+                    <a href="#" class="navigation__link" title="Ссылка на раздел Комплектующие">Комплектующие</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Доставка</a>
+                    <a href="#" class="navigation__link" title="Ссылка на раздел Доставка">Доставка</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Контакты</a>
+                    <a href="#" class="navigation__link" title="Ссылка на раздел Контакты">Контакты</a>
                   </li>
               </ul>
             </nav>
@@ -358,13 +364,13 @@
                 <p class="contacts__desc">
                   г. Мытищи, Олимпийский проспект, д.10
                 </p>
-                <a href="tel:+74955894050" class="contacts__link"
+                <a href="tel:+74955894050" class="contacts__link" title="Наш телефон №1"
                   >+7 (495) 589-40-50</a
                 >
-                <a href="tel:+79250038767" class="contacts__link"
+                <a href="tel:+79250038767" class="contacts__link" title="Наш телефон №2"
                   >+7 (925) 003-87-67</a
                 >
-                <a href="tel:+792692608079" class="contacts__link"
+                <a href="tel:+792692608079" class="contacts__link" title="Наш телефон №3"
                   >+7 (926) 926-080-79</a
                 >
               </div>
@@ -378,12 +384,12 @@
               <p>1999-2018 SD Service Devices</p>
             </div>
             <div class="confidential footer__confidential">
-              <a href="#" class="confidential__link"
+              <a href="#" class="confidential__link" title="Ссылка на раздел с Условиями конфидециальности"
                 >Условия конфидециальности</a
               >
             </div>
             <div class="developer">
-              <a href="#" class="developer__link">Developed by WOW Studio</a>
+              <a href="#" class="developer__link" title="Ссылка на страницу Разработчика сайта">Developed by WOW Studio</a>
             </div>
           </div>
         </div>
@@ -399,21 +405,24 @@
         </div>
         <form action="" class="form modal__form">
           <div class="form__row">
-            <div class="form__block">
-              <input type="text" class="form__field" name="name" placeholder="Имя" required />
-            </div>
-          </div>
-          <div class="form__row">
             <label class="form__block">
-              <input type="tel" class="form__field" name="phone" placeholder="Телефон" required />
+              <span class="form__fieldname visually-hidden">Имя</span>
+              <input type="text" class="form__field" id="modal-name" name="name" placeholder="Имя" required />
             </label>
           </div>
           <div class="form__row">
             <label class="form__block">
+              <span class="form__fieldname visually-hidden">Телефон</span>
+              <input type="tel" class="form__field" name="phone" id="modal-phone" placeholder="Телефон" required />
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="form__block">
+              <span class="form__fieldname visually-hidden">Комментарий</span>
               <textarea
                 class="form__field"
                 name=""
-                id="commentary"
+                id="modal-commentary"
                 cols="30"
                 rows="10"
                 placeholder="Ваш вопрос"
@@ -423,18 +432,18 @@
             </label>
           </div>
           <div class="form__row">
-            <button type="submit" class="button submit-button">Задать вопрос</button>
+            <button type="submit" class="button submit-button"  aria-label="Отправить форму">Задать вопрос</button>
           </div>
           <div class="form__row">
             <div class="form__block form__block--checkbox">
-              <input type="checkbox" class="form__field" name="agree" id="personaldata" required/>
-              <label class="form__block-checkbox" for="personaldata"
+              <input type="checkbox" class="form__field" name="agree" id="modal-checkbox" required/>
+              <label for="#modal-checkbox" class="form__block-checkbox"
                 >Я согласен на обработку персональных данных</label
               >
             </div>
           </div>
         </form>
-        <button class="modal-close">x</button>
+        <button type="button" class="modal-close" aria-label="Закрыть модальное окно">x</button>
       </div>
     </div>
   </body>

@@ -132,23 +132,23 @@
 
 
 .service__link--production{
-  background-image: url("../img/background/service-1.png");
+  background-image: url("../img/background/service-1.jpg");
   @include tablets {
-    background-image: url("../img/background/service-1--tablets.png");
+    background-image: url("../img/background/service-1--tablets.jpg");
   }
 }
 
 .service__link--mounting {
-  background-image: url("../img/background/service-2.png");
+  background-image: url("../img/background/service-2.jpg");
   @include tablets {
-    background-image: url("../img/background/service-2--tablets.png");
+    background-image: url("../img/background/service-2--tablets.jpg");
   }
 }
 
 .service__link--components {
-  background-image: url("../img/background/service-3.png");
+  background-image: url("../img/background/service-3.jpg");
   @include tablets {
-    background-image: url("../img/background/service-3--tablets.png");
+    background-image: url("../img/background/service-3--tablets.jpg");
   }
 }
 
