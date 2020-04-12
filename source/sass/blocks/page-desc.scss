@@ -1,6 +1,6 @@
 .page-desc {
   position: relative;
-  font-family: "PT mono", monospace;
+  font-family: $ptmono;
   font-size: 22px;
   display: flex;
   margin-bottom: 44px;
@@ -31,7 +31,7 @@
 
   @include phones {
     display: block;
-    top: 12px;
+    top: 14px;
     left: 1px;
   }
 }

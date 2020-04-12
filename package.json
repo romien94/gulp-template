@@ -51,6 +51,8 @@
   },
   "dependencies": {
     "del": "^4.1.1",
+    "jquery": "^3.5.0",
+    "jquery.maskedinput": "^1.4.1",
     "svgxuse": "^1.2.6"
   }
 }

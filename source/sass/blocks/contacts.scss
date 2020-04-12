@@ -18,6 +18,7 @@
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
+  opacity: .5;
 
   @include phones {
     max-height: 0;
@@ -62,7 +63,7 @@
 .contacts__title:before {
   display: none;
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   right: 0;
   background-color: #C4C4C4;
@@ -77,7 +78,7 @@
 .contacts__title:after {
   display: none;
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   right: 0;
   background-color: #C4C4C4;

@@ -9,7 +9,7 @@
   }
 
   @include phones {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 }
 
@@ -36,11 +36,17 @@
 
   @include phones {
     min-width: 100%;
-    padding: 21px 10px 29px 21px;
+    padding: 21px 12px 26px 24px;
     margin-bottom: 18px;
-    min-height: auto;
+    &:first-child {
+      padding-right: 15px;
+    }
+    &:nth-child(3) {
+      padding-right: 25px;
+    }
     &:last-child {
       margin-bottom: 0;
+      padding-right: 20px;
     }
   }
 }
@@ -61,6 +67,10 @@
   .advantage__title {
     color: white;
   }
+
+  .advantage__icon-pic {
+    fill: white;
+  }
 }
 
 .advantage__icon {
@@ -72,7 +82,7 @@
     margin-bottom: 5px;
   }
   @include phones {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 }
 
@@ -84,7 +94,7 @@
 }
 
 .advantage__title {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $roboto;
   font-size: 24px;
   color: #00B2FF;
   margin-bottom: 19px;
@@ -99,7 +109,7 @@
 }
 
 .advantage__desc {
-  font-family: "PT mono", monospace;
+  font-family: $ptmono;
   font-size: 16px;
   color: #666666;
 

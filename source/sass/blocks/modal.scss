@@ -17,25 +17,81 @@
 
 .modal__wrapper {
   position: relative;
-  max-width: 470px;
+  min-height: 605px;
+  max-width: 490px;
   margin: 0 auto;
-  padding: 35px 39px;
+  padding: 28px 40px;
   background-color: #00B2FF;
   color: white;
 }
 
 .modal-close {
+  width: 20px;
+  height: 20px;
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 10px;
+
+  &:before {
+    width: 1px;
+    height: 100%;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    transform: rotate(-45deg);
+
+  }
+  &:after {
+    width: 1px;
+    height: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transform: rotate(45deg);
+  }
 }
 
 .modal__title {
-  font-family: "Roboto Condensed";
+  font-family: $roboto;
   font-size: 28px;
+  margin-bottom: 15px;
 }
 
 .modal__desc {
-  font-family: "PT Mono";
+  font-family: $ptmono;
+  margin-bottom: 32px;
+  padding-right: 2%;
+}
+
+.modal textarea.form__field--textarea {
+  min-height: 104px;
+}
+
+.modal .form__row {
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.modal__submit-button {
+  width: 100%;
+  margin-right: 0;
+  padding: 15px 28px;
+}
+
+.modal .form__block-checkbox:before {
+  margin-right: 32px;
+}
+
+.modal input,
+.modal textarea {
+  padding: 16px 24px;
 }

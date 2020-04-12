@@ -14,6 +14,7 @@
   font-family: $ptmono;
   flex-wrap: wrap;
   max-height: 120px;
+  opacity: .5;
 
   @include tablets {
     max-width: auto;

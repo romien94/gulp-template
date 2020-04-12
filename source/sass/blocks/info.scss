@@ -1,5 +1,5 @@
 .info {
-  font-family: "PT mono", monospace;
+  font-family: $ptmono;
   position: relative;
   color: #666666;
   padding-left: 178px;
@@ -11,7 +11,8 @@
   }
 
   @include phones {
-    padding: 0;
+    padding-left: 2px;
+    padding-right: 0;
   }
 }
 
@@ -61,7 +62,7 @@
   }
 
   @include phones {
-    margin-bottom: 41px;
+    margin-bottom: 43px;
   }
 }
 

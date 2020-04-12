@@ -1,7 +1,7 @@
 .button {
-  padding: 12px 28px;
+  padding: 13px 28px;
   border-radius: 5px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $roboto;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -26,6 +26,7 @@
   padding: 15px 44px 15px;
   letter-spacing: 0.05em;
   color: white;
+  text-align: center;
 
   @include tablets {
     padding: 15px 30px 17px;
@@ -55,6 +56,12 @@
   background-color: #00b2ff;
   color: white;
   transition: .7s;
+}
+
+.consult-button {
+  @include phones {
+    display: none;
+  }
 }
 
 .consult-button--mobile {
@@ -89,7 +96,7 @@
   top: 100%;
   left: 0;
   font-family: $ptmono;
-  transform: rotate(-90deg) translate(-140%,-16%);
+  transform: rotate(-90deg) translate(-144%,-37%);
   font-size: 14px;
   opacity: .5;
   line-height: 16px;

@@ -21,7 +21,7 @@
   display: flex;
   flex: 1;
   margin-right: 31px;
-  font-family: "PT mono", monospace;
+  font-family: $ptmono;
   color: white;
   align-items: center;
   position: relative;
@@ -51,6 +51,11 @@
   @include tablets {
     padding: 16px 17px;
   }
+  &:hover,
+  &:focus {
+    background-color: #25ccbb;
+    transition: .7s;
+  }
 }
 
 .form__block input {
@@ -75,7 +80,7 @@
 
 .form__block input::placeholder,
 .form__block textarea::placeholder {
-  font-family: "PT mono", monospace;
+  font-family: $ptmono;
   color: white;
 }
 
@@ -111,7 +116,7 @@
 
 input[type="checkbox"]:checked~.form__block-checkbox:after {
   background-image: url("./../img/background/check.png");
-  content: '';
+  content: "";
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
