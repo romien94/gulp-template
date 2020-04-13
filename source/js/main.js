@@ -22,6 +22,16 @@ callMeButton.addEventListener("click", (e) => {
   body.classList.add("body-lock");
 });
 
+document.addEventListener('keydown', e => {
+  closeModalWindow();
+})
+
+modalWindow.addEventListener("click", e => {
+  if (e.target === modalWindow ) {
+    closeModalWindow();
+  }
+})
+
 modalCloseButton.addEventListener("click", (e) => closeModalWindow());
 
 function closeModalWindow() {
@@ -29,14 +39,10 @@ function closeModalWindow() {
   body.classList.remove("body-lock");
 }
 
-// phonemask check plugin
-$(document).ready(function() {
-  $("#modal-phone").mask("+7 (999) 999-99-99");
-})
+// phonemask check
+IMask(document.querySelector('#phone'), {mask: '+{7}(000)000-00-00'});
+IMask(document.querySelector('#modal-phone'), {mask: '+{7}(000)000-00-00'});
 
-$(document).ready(function() {
-  $("#phone").mask("+7 (999) 999-99-99");
-})
 
 // form validator
 const forms = document.querySelectorAll('.form');

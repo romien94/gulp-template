@@ -9,7 +9,6 @@
     <meta name="keywords" content="печатные платы, производство печатных плат, монтаж печатных плат">
     <title>Стартовый шаблон</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -216,7 +215,7 @@
                   </label>
                   <label class="form__block">
                     <span class="form__fieldname visually-hidden">Телефон</span>
-                    <input class="form__field" type="tel" name="phone" id="phone" placeholder="Телефон" required="">
+                    <input class="form__field" type="tel" name="phone" id="phone" placeholder="Телефон" pattern="\+7\(\d{3}\)\d{3}-\d{2}-\d{2}" required="">
                   </label>
                 </div>
                 <div class="form__row">
@@ -355,7 +354,7 @@
           <div class="form__row">
             <label class="form__block">
               <span class="form__fieldname visually-hidden">Телефон</span>
-              <input type="tel" class="form__field" name="phone" id="modal-phone" placeholder="Телефон" required="">
+              <input type="tel" class="form__field" pattern="\+7\(\d{3}\)\d{3}-\d{2}-\d{2}" name="phone" id="modal-phone" placeholder="Телефон" required="">
             </label>
           </div>
           <div class="form__row">
@@ -381,7 +380,7 @@
         <button type="button" class="modal-close" aria-label="Закрыть модальное окно"></button>
       </div>
     </div>
+    <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
   </body>
 </html>

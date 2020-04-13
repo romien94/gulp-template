@@ -32,6 +32,7 @@
   position: absolute;
   top: 20px;
   right: 10px;
+  padding: 0;
 
   &:before {
     width: 1px;
@@ -39,7 +40,7 @@
     display: block;
     content: "";
     top: 0;
-    left: 0;
+    left: 50%;
     position: absolute;
     background-color: white;
     transform: rotate(-45deg);
@@ -52,7 +53,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     background-color: white;
     transform: rotate(45deg);
   }
