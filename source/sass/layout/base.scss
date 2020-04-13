@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Open Sans", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -24,7 +24,7 @@ body {
 
 .body-lock {
   overflow-y: scroll;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -69,40 +69,9 @@ body {
   margin: -1px;
 }
 
-button {
-  border: 0;
-  cursor: pointer;
-  background-color: transparent;
-}
 
 * {
   box-sizing: border-box;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-button[type="button"] {
-  cursor: pointer;
-  background-color: transparent;
 }
 
 a {
@@ -114,15 +83,4 @@ img {
   display: block;
   max-width: 100%;
   max-height: 100%;
-}
-
-label {
-  cursor: pointer;
-}
-
-input,
-textarea {
-  border: none;
-  background-color: transparent;
-  resize: none;
 }

@@ -5,6 +5,11 @@
   padding-left: 178px;
   padding-right: 10px;
 
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
   @include tablets {
     padding-left: 203px;
     padding-right: 15px;
@@ -16,18 +21,18 @@
   }
 }
 
-.info:before {
+.info::before {
   position: absolute;
   content: "";
   display: block;
   background-image: url("./../img/background/year.png");
   width: 117px;
   min-height: 305px;
-  background-repeat: center center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   left: 0;
-  transform: translate(1%,4%);
+  transform: translate(1%, 4%);
 
   @include tablets {
     min-height: 348px;

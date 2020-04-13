@@ -3,7 +3,7 @@
 }
 
 .modal--active {
-  display: block;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,6 @@
   background-color: rgba($color: #000000, $alpha: 0.4);
   height: 100%;
   z-index: 100;
-  display: flex;
   align-items: center;
 }
 
@@ -21,7 +20,7 @@
   max-width: 490px;
   margin: 0 auto;
   padding: 28px 40px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   color: white;
 }
 
@@ -34,7 +33,7 @@
   right: 10px;
   padding: 0;
 
-  &:before {
+  &::before {
     width: 1px;
     height: 100%;
     display: block;
@@ -44,9 +43,9 @@
     position: absolute;
     background-color: white;
     transform: rotate(-45deg);
-
   }
-  &:after {
+
+  &::after {
     width: 1px;
     height: 100%;
     display: block;
@@ -62,6 +61,7 @@
 .modal__title {
   font-family: $roboto;
   font-size: 28px;
+  font-weight: normal;
   margin-bottom: 15px;
 }
 
@@ -69,6 +69,11 @@
   font-family: $ptmono;
   margin-bottom: 32px;
   padding-right: 2%;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .modal textarea.form__field--textarea {
@@ -77,6 +82,7 @@
 
 .modal .form__row {
   margin-bottom: 32px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -88,7 +94,7 @@
   padding: 15px 28px;
 }
 
-.modal .form__block-checkbox:before {
+.modal .form__block-checkbox::before {
   margin-right: 32px;
 }
 

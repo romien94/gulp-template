@@ -2,6 +2,11 @@
   @include tablets {
     display: none;
   }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .company-history--tablets {
@@ -11,7 +16,7 @@
 
   @include tablets {
     display: block;
-    opacity: .5;
+    opacity: 0.5;
   }
 
   @include phones {

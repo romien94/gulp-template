@@ -8,29 +8,29 @@
 }
 
 .burger-menu:hover {
-  opacity: .5;
-  transition: .7s;
+  opacity: 0.5;
+  transition: 0.7s;
 }
 
-.burger-menu:before,
-.burger-menu:after {
+.burger-menu::before,
+.burger-menu::after {
   position: absolute;
   content: "";
   height: 1px;
   width: 100%;
   background-color: white;
+
   @include tablets {
     transform: translateY(-2px);
   }
 }
 
-.burger-menu:before {
+.burger-menu::before {
   top: 0;
   left: 0;
 }
 
-.burger-menu:after {
-
+.burger-menu::after {
   bottom: 0;
   left: 0;
 }

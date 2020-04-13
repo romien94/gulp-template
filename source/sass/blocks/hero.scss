@@ -2,7 +2,7 @@
   position: relative;
   padding: 303px 0 275px;
   background-image: url("./../img/background/hero.png");
-  background-color: rgba($color: #1B2D37, $alpha: 1);
+  background-color: #1b2d37;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,8 +17,8 @@
   }
 }
 
-.hero:before,
-.hero:after {
+.hero::before,
+.hero::after {
   position: absolute;
   display: block;
   content: "";
@@ -29,11 +29,11 @@
   background-size: cover;
 }
 
-.hero:before {
+.hero::before {
   width: 37%;
   height: 59%;
   background-image: url("./../img/background/plates.png");
-  transform: translate(-22%,-35%);
+  transform: translate(-22%, -35%);
   z-index: 5;
   background-size: contain;
 
@@ -44,21 +44,21 @@
 
   @include phones {
     width: 96%;
-    transform: translate(4%,-92%);
+    transform: translate(4%, -92%);
     height: 46%;
   }
 }
 
-.hero:after {
+.hero::after {
   background-image: url("./../img/background/triangles.png");
   width: 33%;
   // z-index: 30;
   right: 0;
-  transform: translate(-36%,-33%);
+  transform: translate(-36%, -33%);
 
   @include tablets {
     width: 67%;
-    transform: translate(35%,-67%);
+    transform: translate(35%, -67%);
   }
 
   height: 56%;
@@ -75,6 +75,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 30px;
+
   @include phones {
     padding: 0 17px;
   }
@@ -101,7 +102,7 @@
   }
 }
 
-.hero__content:before {
+.hero__content::before {
   position: absolute;
   display: block;
   content: "";

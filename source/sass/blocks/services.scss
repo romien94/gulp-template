@@ -1,5 +1,5 @@
 .services {
-  background-color: #1B2D37;
+  background-color: #1b2d37;
   color: white;
   padding: 87px 0 125px;
 
@@ -14,6 +14,7 @@
 
 .services__section-title {
   margin-bottom: 54px;
+
   @include tablets {
     width: 85%;
   }
@@ -41,6 +42,9 @@
 
 .services__list {
   display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
   @include tablets {
     flex-direction: column;
@@ -85,31 +89,33 @@
   text-decoration: none;
   background-color: blue;
   padding: 51px 45px;
+
   @include tablets {
     padding: 39px 45px;
   }
+
   @include phones {
     padding: 22px 35px;
   }
 }
 
-.service__link:before {
+.service__link::before {
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
   content: "";
-  background-color:rgba(#1B2D37,  0.7);
+  background-color: rgba(#1b2d37, 0.7);
   top: 0;
   left: 0;
 }
 
-.service__link:hover:before {
-  transition: .7s;
-  background-color:rgba(#1B2D37,  0.5);
+.service__link:hover::before {
+  transition: 0.7s;
+  background-color: rgba(#1b2d37, 0.5);
 }
 
-.service__link:after {
+.service__link::after {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,23 +123,24 @@
   content: "";
   width: 63px;
   height: 63px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   bottom: 0;
   right: 0;
   z-index: 50;
-  background-image: url(../img/background/arrow.png);
+  background-image: url("../img/background/arrow.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.service__link:hover:after {
-  background-color: rgba(#00B2FF, 0.7);
-  transition: .7s;
+.service__link:hover::after {
+  background-color: rgba(#00b2ff, 0.7);
+  transition: 0.7s;
 }
 
 
-.service__link--production{
+.service__link--production {
   background-image: url("../img/background/service-1.jpg");
+
   @include tablets {
     background-image: url("../img/background/service-1--tablets.jpg");
   }
@@ -141,6 +148,7 @@
 
 .service__link--mounting {
   background-image: url("../img/background/service-2.jpg");
+
   @include tablets {
     background-image: url("../img/background/service-2--tablets.jpg");
   }
@@ -148,6 +156,7 @@
 
 .service__link--components {
   background-image: url("../img/background/service-3.jpg");
+
   @include tablets {
     background-image: url("../img/background/service-3--tablets.jpg");
   }
@@ -156,10 +165,14 @@
 .service__title {
   width: 100%;
   max-width: 160px;
-  z-index: 20;
+  z-index: 30;
   font-size: 20px;
   font-family: $roboto;
   color: white;
   position: relative;
-  z-index: 30;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }

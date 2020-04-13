@@ -3,7 +3,7 @@
     height: auto;
     margin-bottom: 24px;
     max-height: 100%;
-    transition: max-height .7s;
+    transition: max-height 0.7s;
   }
 }
 
@@ -11,10 +11,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   font-family: $ptmono;
   flex-wrap: wrap;
   max-height: 120px;
-  opacity: .5;
+  opacity: 0.5;
 
   @include tablets {
     max-width: auto;
@@ -46,6 +49,7 @@
   font-size: 15px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  font-weight: normal;
   font-family: $roboto;
   margin-bottom: 20px;
 
@@ -62,8 +66,8 @@
   }
 }
 
-.navigation__title:before,
-.navigation__title:after {
+.navigation__title::before,
+.navigation__title::after {
   @include phones {
     position: absolute;
     content: "";
@@ -74,19 +78,19 @@
   }
 }
 
-.navigation__title:before {
+.navigation__title::before {
   width: 15px;
   height: 2px;
   transform: translate(-16%, 50%);
 }
 
-.navigation__title:after {
+.navigation__title::after {
   width: 2px;
   height: 15px;
   transform: translate(-8px, -5px);
 }
 
-.navigation--active .navigation__title:after {
+.navigation--active .navigation__title::after {
   display: none;
 }
 
