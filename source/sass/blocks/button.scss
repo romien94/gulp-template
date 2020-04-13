@@ -5,8 +5,10 @@
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+  background-color: transparent;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
   border: 1px solid white;
 
   @include phones {
@@ -38,7 +40,7 @@
   background-color: white;
   color: #00b2ff;
   border-color: #00b2ff;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 .button--border_blue {
@@ -48,6 +50,7 @@
   font-size: 14px;
   letter-spacing: 0.04em;
   line-height: 16px;
+
   @include phones {
     padding: 13px 51px;
   }
@@ -56,7 +59,7 @@
 .button--border_blue:hover {
   background-color: #00b2ff;
   color: white;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 .consult-button {
@@ -67,6 +70,7 @@
 
 .consult-button--mobile {
   display: none;
+
   @include phones {
     display: block;
   }
@@ -80,7 +84,7 @@
   line-height: 16px;
   outline: none;
 
-  @include tablets {    
+  @include tablets {
     margin-right: 42px;
     padding: 16px 28px;
   }
@@ -92,18 +96,18 @@
   }
 }
 
-
 .scroll-button {
   align-self: flex-start;
   position: absolute;
   top: 100%;
   left: 0;
   font-family: $ptmono;
-  transform: rotate(-90deg) translate(-144%,-37%);
+  transform: rotate(-90deg) translate(-144%, -37%);
   font-size: 14px;
-  opacity: .5;
+  opacity: 0.5;
   line-height: 16px;
   text-decoration: none;
+
   @include tablets {
     display: none;
   }

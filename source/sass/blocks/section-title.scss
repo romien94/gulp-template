@@ -2,6 +2,7 @@
   font-family: $roboto;
   font-size: 36px;
   color: white;
+  font-weight: normal;
 
   @include tablets {
     font-size: 32px;
@@ -13,5 +14,5 @@
 }
 
 .section-title--gray {
-  color: #666;
+  color: #666666;
 }

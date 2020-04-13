@@ -29,6 +29,9 @@
 }
 
 .header-contacts {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   flex: 1;
   margin-right: 45px;
@@ -51,6 +54,7 @@
   &:last-child {
     margin-right: 0;
   }
+
   @include tablets {
     margin-right: 34px;
   }
@@ -74,8 +78,8 @@
 }
 
 .header-contacts__link:hover {
-  opacity: .6;
-  transition: .7s;
+  opacity: 0.6;
+  transition: 0.7s;
 }
 
 .header-contacts__link-text {

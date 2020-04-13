@@ -17,9 +17,14 @@
     padding-left: 48px;
     margin-bottom: 40px;
   }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.page-desc:before {
+.page-desc::before {
   content: "";
   position: absolute;
   display: none;

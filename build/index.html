@@ -226,7 +226,7 @@
                 </div>
                 <div class="form__row">
                   <button type="submit" class="button submit-button" aria-label="Отправить форму">Задать вопрос</button>
-                  <label class="form__block form__block--checkbox" tabindex="0">
+                  <label class="form__block form__block--checkbox" tabindex="1">
                     <input class="form__checkbox visually-hidden form__field" type="checkbox" name="checked" required="" id="checkbox">
                     <span class="form__block-checkbox">
                       Я согласен на обработку персональных данных
@@ -360,7 +360,7 @@
           <div class="form__row">
             <label class="form__block">
               <textarea class="form__field form__field--textarea" name="commentary" id="modal-commentary" placeholder="Ваш вопрос" required=""></textarea>
-                <span class="form__fieldname visually-hidden">Комментарий</span>
+              <span class="form__fieldname visually-hidden">Комментарий</span>
             </label>
           </div>
           <div class="form__row">
@@ -377,7 +377,7 @@
             </div>
           </div>
         </form>
-        <button type="button" class="modal-close" aria-label="Закрыть модальное окно"></button>
+        <button type="button" tabindex="0" class="modal-close" aria-label="Закрыть модальное окно"></button>
       </div>
     </div>
     <script src="js/vendor.js"></script>

@@ -1,8 +1,15 @@
+.confidential {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .confidential__link {
   text-decoration: none;
 }
 
 .confidential__link:hover {
   color: #00b2ff;
-  transition: .7s;
+  transition: 0.7s;
 }

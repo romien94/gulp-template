@@ -1,5 +1,8 @@
 .socials__list {
   display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .socials__item {
@@ -19,11 +22,11 @@
   display: block;
   width: 27px;
   height: 27px;
-  fill: #CDCDCD;
+  fill: #cdcdcd;
 }
 
 .socials__image--fb:hover {
-  fill: #3578E5;
+  fill: #3578e5;
 }
 
 .socials__image--ok:hover {

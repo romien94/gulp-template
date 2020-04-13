@@ -263,7 +263,7 @@
                 </div>
                 <div class="form__row">
                   <button type="submit" class="button submit-button" aria-label="Отправить форму">Задать вопрос</button>
-                  <label class="form__block form__block--checkbox" tabindex="0">
+                  <label class="form__block form__block--checkbox" tabindex="1">
                     <input
                       class="form__checkbox visually-hidden form__field"
                       type="checkbox"
@@ -420,16 +420,16 @@
             <label class="form__block">
               <textarea
               class="form__field form__field--textarea"
-                name="commentary"
-                id="modal-commentary"
-                placeholder="Ваш вопрос"
-                required
-                ></textarea>
-                <span class="form__fieldname visually-hidden">Комментарий</span>
+              name="commentary"
+              id="modal-commentary"
+              placeholder="Ваш вопрос"
+              required
+              ></textarea>
+              <span class="form__fieldname visually-hidden">Комментарий</span>
             </label>
           </div>
           <div class="form__row">
-            <button type="submit" class="button submit-button modal__submit-button"  aria-label="Отправить форму">Отправить</button>
+            <button type="submit" class="button submit-button modal__submit-button" aria-label="Отправить форму">Отправить</button>
           </div>
           <div class="form__row">
             <div class="form__block form__block--checkbox">
@@ -448,7 +448,7 @@
             </div>
           </div>
         </form>
-        <button type="button" class="modal-close" aria-label="Закрыть модальное окно"></button>
+        <button type="button" tabindex="0" class="modal-close" aria-label="Закрыть модальное окно"></button>
       </div>
     </div>
     <script src="js/vendor.js"></script>

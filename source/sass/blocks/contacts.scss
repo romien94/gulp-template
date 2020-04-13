@@ -8,7 +8,8 @@
   .contacts__wrapper {
     max-height: 100%;
     height: auto;
-    transition: .7s;
+    transition: 0.7s;
+
     @include phones {
       margin-bottom: 24px;
     }
@@ -18,7 +19,7 @@
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
-  opacity: .5;
+  opacity: 0.5;
 
   @include phones {
     max-height: 0;
@@ -28,7 +29,13 @@
 
 .contacts__desc,
 .contacts__link {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
   margin-bottom: 4px;
+
   @include phones {
     padding-right: 2%;
   }
@@ -44,6 +51,7 @@
   font-family: $roboto;
   margin-bottom: 20px;
   font-size: 15px;
+  font-weight: normal;
   letter-spacing: 0.05em;
 
   @include tablets {
@@ -52,7 +60,7 @@
   }
 
   @include phones {
-    color: #1B2D37;
+    color: #1b2d37;
     font-weight: normal;
     opacity: 1;
     margin-bottom: 33px;
@@ -60,41 +68,41 @@
   }
 }
 
-.contacts__title:before {
+.contacts__title::before {
   display: none;
   position: absolute;
   content: "";
   top: 50%;
   right: 0;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   width: 2px;
   height: 15px;
   transform: translate(-8px, -5px);
+
   @include phones {
     display: block;
   }
 }
 
-.contacts__title:after {
+.contacts__title::after {
   display: none;
   position: absolute;
   content: "";
   top: 50%;
   right: 0;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   width: 15px;
   height: 2px;
   transform: translate(-16%, 50%);
+
   @include phones {
     display: block;
   }
 }
 
-.contacts--active .contacts__title:before {
+.contacts--active .contacts__title::before {
   display: none;
 }
-
-
 
 .contacts__link {
   text-decoration: none;

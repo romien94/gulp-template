@@ -1,4 +1,7 @@
 .advantages {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -18,11 +21,11 @@
   max-width: 570px;
   min-height: 299px;
   padding: 40px 40px 58px 40px;
-  border: 1px solid #EBEBEB;
-  border-left: 3px solid #00B2FF;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
   margin-bottom: 29px;
   cursor: pointer;
-  transition: .7s;
+  transition: 0.7s;
   background-color: white;
 
   @include tablets {
@@ -39,12 +42,15 @@
     min-width: 100%;
     padding: 21px 12px 26px 24px;
     margin-bottom: 18px;
+
     &:first-child {
       padding-right: 15px;
     }
+
     &:nth-child(3) {
       padding-right: 25px;
     }
+
     &:last-child {
       margin-bottom: 0;
       padding-right: 20px;
@@ -60,12 +66,12 @@
   }
 }
 
-
 .advantage:hover {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   color: white;
 
-  .advantage__title {
+  .advantage__title,
+  .advantage__desc {
     color: white;
   }
 
@@ -78,10 +84,12 @@
   width: 35px;
   height: 35px;
   margin-bottom: 17px;
+
   @include tablets {
     width: 30px;
     margin-bottom: 5px;
   }
+
   @include phones {
     margin-bottom: 14px;
   }
@@ -91,13 +99,14 @@
   display: block;
   width: 100%;
   max-height: 100%;
-  fill: #00B2FF;
+  fill: #00b2ff;
 }
 
 .advantage__title {
   font-family: $roboto;
   font-size: 24px;
-  color: #00B2FF;
+  font-weight: normal;
+  color: #00b2ff;
   margin-bottom: 19px;
 
   @include tablets {
@@ -114,16 +123,12 @@
   font-size: 16px;
   color: #666666;
 
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
   @include tablets {
     line-height: 22px;
-  }
-}
-
-.advantage:hover {
-  .advantage__desc {
-    color: white;
-  }
-  .advantage__icon {
-    fill: white;
   }
 }

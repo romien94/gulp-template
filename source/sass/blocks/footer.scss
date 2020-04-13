@@ -1,6 +1,6 @@
 .footer {
   font-family: $ptmono;
-  color: #1B2D37;
+  color: #1b2d37;
   padding: 65px 0 10px;
 
   @include tablets {
@@ -20,6 +20,7 @@
   @include tablets {
     padding: 0 25px;
   }
+
   @include phones {
     padding: 0 15px;
   }
@@ -72,8 +73,8 @@
   }
 }
 
-.footer__contacts:after,
-.footer__navigation:after {
+.footer__contacts::after,
+.footer__navigation::after {
   @include phones {
     position: absolute;
     display: block;
@@ -106,7 +107,7 @@
   }
 }
 
-.footer__links:after {
+.footer__links::after {
   @include tablets {
     position: absolute;
     display: block;
@@ -121,10 +122,12 @@
 
 .footer__logo {
   margin-bottom: 53px;
+
   @include tablets {
     margin-bottom: 0;
     margin-right: 12%;
   }
+
   @include phones {
     margin-bottom: 29px;
     margin-right: 0;
@@ -133,6 +136,7 @@
 
 .footer__logo-image {
   width: 215px;
+
   @include phones {
     margin-bottom: 0;
   }
@@ -146,7 +150,7 @@
   line-height: 24px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  opacity: .5;
+  opacity: 0.5;
 
   @include tablets {
     justify-content: space-between;
@@ -159,7 +163,7 @@
   }
 }
 
-.footer__bottom:before {
+.footer__bottom::before {
   position: absolute;
   display: block;
   content: "";
@@ -198,6 +202,7 @@
   @include tablets {
     margin-left: auto;
   }
+
   @include phones {
     margin-right: auto;
   }

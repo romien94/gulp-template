@@ -1,9 +1,9 @@
 .feedback {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
+  padding: 91px 0 114px;
   background-image: url("./../img/icon-feedback.svg");
   background-repeat: no-repeat;
   background-position: 100% center;
-  padding: 91px 0 114px;
 
   @include tablets {
     padding: 77px 0 100px;
@@ -19,16 +19,18 @@
   max-width: 1240px;
   justify-content: flex-end;
   position: relative;
-  padding: 0px 27px;
+  padding: 0 27px;
+
   @include tablets {
     padding: 0 11% 0 12%;
   }
+
   @include phones {
     padding: 0 17px;
   }
 }
 
-.feedback__container:before {
+.feedback__container::before {
   position: absolute;
   content: "";
   display: block;
@@ -43,9 +45,7 @@
   top: 0;
   left: 0;
 
-  @media 
-  (-webkit-min-device-pixel-ratio: 2), 
-  (min-resolution: 192dpi) { 
+  @media (min-resolution: 192dpi) {
     background-image: url("./../img/background/airplane-webp.webp");
   }
 
@@ -53,7 +53,8 @@
     display: none;
   }
 }
-.feedback__container:after{
+
+.feedback__container::after {
   position: absolute;
   content: "";
   display: block;
@@ -63,7 +64,7 @@
   background-image: url("./../img/background/triangles.png");
   background-repeat: no-repeat;
   background-position: center center;
-  transform: translate(-22%,0%);
+  transform: translate(-22%, 0%);
   background-size: contain;
   top: 0;
   left: 0;
@@ -79,6 +80,7 @@
   @include tablets {
     margin-bottom: 20px;
   }
+
   @include phones {
     margin-bottom: 15px;
   }
