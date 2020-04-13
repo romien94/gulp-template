@@ -1,9 +1,13 @@
 .feedback {
   background-color: #00B2FF;
+  background-image: url("./../img/icon-feedback.svg");
+  background-repeat: no-repeat;
+  background-position: 100% center;
   padding: 91px 0 114px;
 
   @include tablets {
     padding: 77px 0 100px;
+    background-image: none;
   }
 
   @include phones {
@@ -38,6 +42,12 @@
   background-size: contain;
   top: 0;
   left: 0;
+
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("./../img/background/airplane-webp.webp");
+  }
 
   @include tablets {
     display: none;

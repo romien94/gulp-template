@@ -23,6 +23,7 @@
   margin-bottom: 29px;
   cursor: pointer;
   transition: .7s;
+  background-color: white;
 
   @include tablets {
     width: calc(50% - 32px);

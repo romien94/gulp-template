@@ -1,12 +1,18 @@
 .about {
+  background: (url("./../img/icon-about.svg"));
+  background-position: center center;
+  background-repeat: no-repeat;
+  // background: (url("./../img/icon-about.svg"));
   padding: 113px 0 121px;
 
   @include tablets {
     padding: 54px 0 94px;
+    background-position: 30% center;
   }
 
   @include phones {
     padding: 38px 0 76px;
+    background: none;
   }
 }
 

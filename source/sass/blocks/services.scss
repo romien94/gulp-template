@@ -83,7 +83,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-decoration: none;
-  background-color: blue;
+  background-color: gray;
   padding: 51px 45px;
   @include tablets {
     padding: 39px 45px;
@@ -134,22 +134,53 @@
 
 .service__link--production{
   background-image: url("../img/background/service-1.jpg");
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("./../img/background/service-1-webp.webp");
+  }
   @include tablets {
     background-image: url("../img/background/service-1--tablets.jpg");
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+      background-image: url("./../img/background//service-1-webp--tablets.webp");
+    }
   }
+
 }
 
 .service__link--mounting {
   background-image: url("../img/background/service-2.jpg");
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("./../img/background/service-2-webp.webp");
+  }
   @include tablets {
     background-image: url("../img/background/service-2--tablets.jpg");
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+      background-image: url("./../img/background//service-2-webp--tablets.webp");
+    }
   }
 }
 
 .service__link--components {
   background-image: url("../img/background/service-3.jpg");
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("./../img/background/service-3-webp.webp");
+  }
   @include tablets {
     background-image: url("../img/background/service-3--tablets.jpg");
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+      background-image: url("./../img/background//service-3-webp--tablets.webp");
+    }
   }
 }
 

@@ -23,7 +23,9 @@ callMeButton.addEventListener("click", (e) => {
 });
 
 document.addEventListener('keydown', e => {
-  closeModalWindow();
+  if (e.key === 'Escape') {
+    closeModalWindow();
+  }
 })
 
 modalWindow.addEventListener("click", e => {

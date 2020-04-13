@@ -33,7 +33,8 @@
   }
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: white;
   color: #00b2ff;
   border-color: #00b2ff;
@@ -77,6 +78,7 @@
   font-size: 14px;
   letter-spacing: 0.05em;
   line-height: 16px;
+  outline: none;
 
   @include tablets {    
     margin-right: 42px;
@@ -89,6 +91,7 @@
     padding: 13px 10px;
   }
 }
+
 
 .scroll-button {
   align-self: flex-start;
