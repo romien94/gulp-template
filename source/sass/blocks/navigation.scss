@@ -33,7 +33,7 @@
 
 .navigation__item {
   margin-bottom: 4px;
-  margin-right: 70px;
+  margin-right: 75px;
 
   @include tablets {
     margin-right: 0;
@@ -51,6 +51,7 @@
   text-transform: uppercase;
   font-weight: normal;
   font-family: $roboto;
+  margin-top: 0;
   margin-bottom: 20px;
 
   @include tablets {

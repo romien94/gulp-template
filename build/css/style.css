@@ -405,7 +405,7 @@ img {
       left: 1px; } }
 
 .button {
-  padding: 13px 28px;
+  padding: 13px 27px;
   border-radius: 5px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
@@ -613,6 +613,7 @@ img {
   font-size: 24px;
   font-weight: normal;
   color: #00b2ff;
+  margin-top: 0;
   margin-bottom: 19px; }
   @media screen and (max-width: 1023px) {
     .advantage__title {
@@ -636,6 +637,7 @@ img {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   color: white;
+  margin-top: 0;
   font-weight: normal; }
   @media screen and (max-width: 1023px) {
     .section-title {
@@ -1166,7 +1168,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
   @media screen and (max-width: 1023px) {
     .footer__contacts {
       width: 48%;
-      min-width: 250px; } }
+      min-width: 251px; } }
   @media screen and (max-width: 767px) {
     .footer__contacts {
       width: 100%;
@@ -1174,7 +1176,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
 
 .footer__navigation {
   width: 32%;
-  min-width: 445px; }
+  min-width: 446px; }
   @media screen and (max-width: 1023px) {
     .footer__navigation {
       width: 50%;
@@ -1274,13 +1276,16 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
       display: none; } }
 
 .footer__copyright {
-  margin-right: 5.5%; }
+  margin-right: 5.5%;
+  min-width: 150px; }
 
 .footer__company-history {
-  margin-right: 10.5%; }
+  margin-right: 10%;
+  min-width: 233px; }
 
 .footer__confidential {
-  margin-right: 28.5%; }
+  margin-right: 29%;
+  min-width: 208px; }
   @media screen and (max-width: 1023px) {
     .footer__confidential {
       margin-right: 0; } }
@@ -1295,6 +1300,9 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
 @media screen and (max-width: 767px) {
   .footer__socials {
     margin-right: auto; } }
+
+.footer__developer {
+  min-width: 291px; }
 
 .contacts {
   display: flex;
@@ -1339,6 +1347,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   margin-bottom: 20px;
   font-size: 15px;
+  margin-top: 0;
   font-weight: normal;
   letter-spacing: 0.05em; }
   @media screen and (max-width: 1023px) {
@@ -1446,7 +1455,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
 
 .navigation__item {
   margin-bottom: 4px;
-  margin-right: 70px; }
+  margin-right: 75px; }
   @media screen and (max-width: 1023px) {
     .navigation__item {
       margin-right: 0; } }
@@ -1460,6 +1469,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
   text-transform: uppercase;
   font-weight: normal;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin-top: 0;
   margin-bottom: 20px; }
   @media screen and (max-width: 1023px) {
     .navigation__title {

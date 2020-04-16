@@ -48,7 +48,7 @@
 
   @include tablets {
     width: 48%;
-    min-width: 250px;
+    min-width: 251px;
   }
 
   @include phones {
@@ -59,7 +59,7 @@
 
 .footer__navigation {
   width: 32%;
-  min-width: 445px;
+  min-width: 446px;
 
   @include tablets {
     width: 50%;
@@ -180,14 +180,17 @@
 
 .footer__copyright {
   margin-right: 5.5%;
+  min-width: 150px;
 }
 
 .footer__company-history {
-  margin-right: 10.5%;
+  margin-right: 10%;
+  min-width: 233px;
 }
 
 .footer__confidential {
-  margin-right: 28.5%;
+  margin-right: 29%;
+  min-width: 208px;
 
   @include tablets {
     margin-right: 0;
@@ -206,4 +209,8 @@
   @include phones {
     margin-right: auto;
   }
+}
+
+.footer__developer {
+  min-width: 291px;
 }
