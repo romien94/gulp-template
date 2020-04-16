@@ -62,17 +62,17 @@
   transition: 0.7s;
 }
 
-.consult-button {
+.consult-button__text {
   @include phones {
     display: none;
   }
 }
 
-.consult-button--mobile {
+.consult-button__text--mobile {
   display: none;
 
   @include phones {
-    display: block;
+    display: inline-block;
   }
 }
 
