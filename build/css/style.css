@@ -1160,7 +1160,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
       margin-bottom: 36px; } }
   @media screen and (max-width: 767px) {
     .footer__maincontent {
-      margin-bottom: 1vh; } }
+      margin-bottom: 8px; } }
 
 .footer__contacts {
   display: flex;
@@ -1248,7 +1248,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
 .footer__bottom {
   position: relative;
   display: flex;
-  padding: 1.5vh 0 0;
+  padding: 17px 0 0;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -1292,7 +1292,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
       margin-right: 0; } }
   @media screen and (max-width: 767px) {
     .footer__confidential {
-      margin-bottom: 3vh; } }
+      margin-bottom: 24px; } }
 
 @media screen and (max-width: 1023px) {
   .footer__socials {
@@ -1524,6 +1524,9 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
 .confidential__link:hover {
   color: #00b2ff;
   transition: 0.7s; }
+
+.developer {
+  text-align: center; }
 
 .developer__link {
   text-decoration: none; }

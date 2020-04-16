@@ -37,7 +37,7 @@
   }
 
   @include phones {
-    margin-bottom: 1vh;
+    margin-bottom: 8px;
   }
 }
 
@@ -145,7 +145,7 @@
 .footer__bottom {
   position: relative;
   display: flex;
-  padding: 1.5vh 0 0;
+  padding: 17px 0 0;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -197,7 +197,7 @@
   }
 
   @include phones {
-    margin-bottom: 3vh;
+    margin-bottom: 24px;
   }
 }
 
