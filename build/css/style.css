@@ -134,7 +134,7 @@ img {
       height: 46%; } }
   @media (min-resolution: 192dpi) {
     .hero::before {
-      background-image: url("./../img/background/plates-webp.webp"); } }
+      background-image: url("./../img/background/plates-2x.png"); } }
 
 .hero::after {
   background-image: url("./../img/background/triangles.png");
@@ -460,14 +460,14 @@ img {
   transition: 0.7s; }
 
 @media screen and (max-width: 767px) {
-  .consult-button {
+  .consult-button__text {
     display: none; } }
 
-.consult-button--mobile {
+.consult-button__text--mobile {
   display: none; }
   @media screen and (max-width: 767px) {
-    .consult-button--mobile {
-      display: block; } }
+    .consult-button__text--mobile {
+      display: inline-block; } }
 
 .submit-button {
   min-width: 47%;
@@ -638,7 +638,8 @@ img {
   font-size: 36px;
   color: white;
   margin-top: 0;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-top: 0; }
   @media screen and (max-width: 1023px) {
     .section-title {
       font-size: 32px; } }
@@ -842,37 +843,37 @@ img {
   background-image: url("../img/background/service-1.jpg"); }
   @media (min-resolution: 192dpi) {
     .service__link--production {
-      background-image: url("./../img/background/service-1-webp.webp"); } }
+      background-image: url("./../img/background/service-1-2x.jpg"); } }
   @media screen and (max-width: 1023px) {
     .service__link--production {
       background-image: url("../img/background/service-1--tablets.jpg"); } }
   @media screen and (max-width: 1023px) and (min-resolution: 192dpi) {
     .service__link--production {
-      background-image: url("./../img/background//service-1-webp--tablets.webp"); } }
+      background-image: url("./../img/background//service-1--tablets-2x.jpg"); } }
 
 .service__link--mounting {
   background-image: url("../img/background/service-2.jpg"); }
   @media (min-resolution: 192dpi) {
     .service__link--mounting {
-      background-image: url("./../img/background/service-2-webp.webp"); } }
+      background-image: url("./../img/background/service-2-2x.jpg"); } }
   @media screen and (max-width: 1023px) {
     .service__link--mounting {
       background-image: url("../img/background/service-2--tablets.jpg"); } }
   @media screen and (max-width: 1023px) and (min-resolution: 192dpi) {
     .service__link--mounting {
-      background-image: url("./../img/background//service-2-webp--tablets.webp"); } }
+      background-image: url("./../img/background//service-2--tablets-2x.jpg"); } }
 
 .service__link--components {
   background-image: url("../img/background/service-3.jpg"); }
   @media (min-resolution: 192dpi) {
     .service__link--components {
-      background-image: url("./../img/background/service-3-webp.webp"); } }
+      background-image: url("./../img/background/service-3-2x.jpg"); } }
   @media screen and (max-width: 1023px) {
     .service__link--components {
       background-image: url("../img/background/service-3--tablets.jpg"); } }
   @media screen and (max-width: 1023px) and (min-resolution: 192dpi) {
     .service__link--components {
-      background-image: url("./../img/background//service-3-webp--tablets.webp"); } }
+      background-image: url("./../img/background//service-3--tablets-2x.jpg"); } }
 
 .service__title {
   width: 100%;
@@ -928,7 +929,7 @@ img {
   left: 0; }
   @media (min-resolution: 192dpi) {
     .feedback__container::before {
-      background-image: url("./../img/background/airplane-webp.webp"); } }
+      background-image: url("./../img/background/airplane-2x.png"); } }
   @media screen and (max-width: 1023px) {
     .feedback__container::before {
       display: none; } }
@@ -989,7 +990,7 @@ img {
   @media screen and (max-width: 767px) {
     .form__row {
       flex-direction: column;
-      margin-bottom: 33px; } }
+      margin-bottom: 32px; } }
 
 .form__row:last-child {
   margin-bottom: 0; }
@@ -1130,7 +1131,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
 .footer {
   font-family: "PT mono", "Courier New", monospace;
   color: #1b2d37;
-  padding: 65px 0 10px; }
+  padding: 63px 0 10px; }
   @media screen and (max-width: 1023px) {
     .footer {
       padding: 21px 0 10px;
@@ -1345,6 +1346,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
   position: relative;
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin-top: 0;
   margin-bottom: 20px;
   font-size: 15px;
   margin-top: 0;

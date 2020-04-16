@@ -141,14 +141,14 @@
   background-image: url("../img/background/service-1.jpg");
 
   @media (min-resolution: 192dpi) {
-    background-image: url("./../img/background/service-1-webp.webp");
+    background-image: url("./../img/background/service-1-2x.jpg");
   }
 
   @include tablets {
     background-image: url("../img/background/service-1--tablets.jpg");
 
     @media (min-resolution: 192dpi) {
-      background-image: url("./../img/background//service-1-webp--tablets.webp");
+      background-image: url("./../img/background//service-1--tablets-2x.jpg");
     }
   }
 }
@@ -157,14 +157,14 @@
   background-image: url("../img/background/service-2.jpg");
 
   @media (min-resolution: 192dpi) {
-    background-image: url("./../img/background/service-2-webp.webp");
+    background-image: url("./../img/background/service-2-2x.jpg");
   }
 
   @include tablets {
     background-image: url("../img/background/service-2--tablets.jpg");
 
     @media (min-resolution: 192dpi) {
-      background-image: url("./../img/background//service-2-webp--tablets.webp");
+      background-image: url("./../img/background//service-2--tablets-2x.jpg");
     }
   }
 }
@@ -173,14 +173,14 @@
   background-image: url("../img/background/service-3.jpg");
 
   @media (min-resolution: 192dpi) {
-    background-image: url("./../img/background/service-3-webp.webp");
+    background-image: url("./../img/background/service-3-2x.jpg");
   }
 
   @include tablets {
     background-image: url("../img/background/service-3--tablets.jpg");
 
     @media (min-resolution: 192dpi) {
-      background-image: url("./../img/background//service-3-webp--tablets.webp");
+      background-image: url("./../img/background//service-3--tablets-2x.jpg");
     }
   }
 }
