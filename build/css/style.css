@@ -1625,6 +1625,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 28px;
   font-weight: normal;
+  margin-top: 0;
   margin-bottom: 15px; }
 
 .modal__desc {
