@@ -48,6 +48,27 @@ function closeModalWindow() {
   document.body.classList.remove('body-lock');
 }
 
+// window scroll
+var scrollButton = document.querySelector('.scroll-button');
+var aboutSection = document.querySelector('#about');
+var consultButton = document.querySelector('.consult-button');
+var feedbackSection = document.querySelector('#form');
+
+scrollButton.addEventListener('click', function (e) {
+  e.preventDefault();
+  var aboutSectionOffsetTop = aboutSection.offsetTop;
+  var diff = aboutSectionOffsetTop - window.scrollY;
+  window.scrollBy(0, diff, {behavior: 'smooth'});
+});
+
+consultButton.addEventListener('click', function (e) {
+  e.preventDefault();
+  var feedbackSectionOffsetTop = feedbackSection.offsetTop;
+  var diff = feedbackSectionOffsetTop - window.scrollY;
+  window.scrollBy(0, diff, {behavior: 'smooth'});
+});
+
+
 // phonemask check
 IMask(document.querySelector('#phone'), {mask: '+{7}(000)000-00-00'});
 IMask(document.querySelector('#modal-phone'), {mask: '+{7}(000)000-00-00'});
