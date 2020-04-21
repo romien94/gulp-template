@@ -211,5 +211,6 @@
   min-width: 208px;
   @include tablets {
     min-width: 196px;
+    margin-left: 0;
   }  
 }

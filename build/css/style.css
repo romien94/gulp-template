@@ -1304,7 +1304,8 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
   min-width: 208px; }
   @media screen and (max-width: 1023px) {
     .footer__developer {
-      min-width: 196px; } }
+      min-width: 196px;
+      margin-left: 0; } }
 
 .contacts {
   display: flex;
