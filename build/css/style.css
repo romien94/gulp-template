@@ -926,7 +926,8 @@ img {
   transform: translate(4%, -3%);
   background-size: contain;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 20; }
   @media (min-resolution: 192dpi) {
     .feedback__container::before {
       background-image: url("./../img/background/airplane-2x.png"); } }
@@ -1257,7 +1258,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
   @media screen and (max-width: 1023px) {
     .footer__bottom {
       justify-content: space-between;
-      padding: 20px 0 0; } }
+      padding: 22px 0 0; } }
   @media screen and (max-width: 767px) {
     .footer__bottom {
       flex-direction: column;
@@ -1285,11 +1286,7 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
   min-width: 233px; }
 
 .footer__confidential {
-  margin-right: 29%;
   min-width: 208px; }
-  @media screen and (max-width: 1023px) {
-    .footer__confidential {
-      margin-right: 0; } }
   @media screen and (max-width: 767px) {
     .footer__confidential {
       margin-bottom: 24px; } }
@@ -1303,7 +1300,11 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
     margin-right: auto; } }
 
 .footer__developer {
-  min-width: 291px; }
+  margin-left: auto;
+  min-width: 208px; }
+  @media screen and (max-width: 1023px) {
+    .footer__developer {
+      min-width: 196px; } }
 
 .contacts {
   display: flex;
@@ -1361,7 +1362,6 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
       color: #1b2d37;
       font-weight: normal;
       opacity: 1;
-      margin-bottom: 33px;
       cursor: pointer; } }
 
 .contacts__title::before {
@@ -1617,6 +1617,10 @@ input[type="checkbox"]:checked ~ .form__block-checkbox::after {
     left: 50%;
     background-color: white;
     transform: rotate(45deg); }
+  .modal-close:hover:after, .modal-close:hover:before {
+    background-color: blue;
+    width: 2px;
+    transition: .7s; }
   .modal-close:focus {
     outline: 1px blue;
     outline-style: dotted; }

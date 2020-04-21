@@ -154,7 +154,7 @@
 
   @include tablets {
     justify-content: space-between;
-    padding: 20px 0 0;
+    padding: 22px 0 0;
   }
 
   @include phones {
@@ -189,12 +189,7 @@
 }
 
 .footer__confidential {
-  margin-right: 29%;
   min-width: 208px;
-
-  @include tablets {
-    margin-right: 0;
-  }
 
   @include phones {
     margin-bottom: 24px;
@@ -212,5 +207,9 @@
 }
 
 .footer__developer {
-  min-width: 291px;
+  margin-left: auto;
+  min-width: 208px;
+  @include tablets {
+    min-width: 196px;
+  }  
 }

@@ -60,6 +60,15 @@
     transform: rotate(45deg);
   }
 
+  &:hover {
+    &:after,
+    &:before {
+      background-color: blue;
+      width: 2px;
+      transition: .7s;
+    }
+  }
+
   &:focus {
     outline: 1px blue;
     outline-style: dotted;
